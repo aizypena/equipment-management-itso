@@ -8,8 +8,12 @@ use CodeIgniter\Router\RouteCollection;
 
 // index route
 $routes->get('/', 'Index::index');
+$routes->get('about-us', 'Index::about');
+$routes->get('contact-us', 'Index::contact');
 
 // auth route
+$routes->get('register', 'Auth::register');
+$routes->get('login', 'Auth::login');
 
 // itso personnel route
 
