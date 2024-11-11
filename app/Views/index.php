@@ -2,7 +2,7 @@
     <div class="home-container d-flex container vh-100 align-items-center">
         <section class="left-container w-100 w-md-50">
             <div class="description-container">
-                <h1 class="pb-3">FEU Tech</h1>
+                <h1 class="pb-3">FEU Tech Equipment Management</h1>
                 <p>FEU Tech Equipment Management System is designed to streamline the process of managing and tracking
                     equipment within the institution. Our system ensures efficient allocation, maintenance, and
                     utilization of resources, supporting the academic and operational needs of FEU Tech.</p>

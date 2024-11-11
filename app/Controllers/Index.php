@@ -9,6 +9,7 @@ class Index extends BaseController
         return view('includes/header', $data)
             .view('includes/nav')
             .view('index')
+            .view('includes/footer')
             .view('includes/bottom');
     }
 
@@ -18,6 +19,7 @@ class Index extends BaseController
         return view('includes/header', $data)
             .view('includes/nav')
             .view('about-us')
+            .view('includes/footer')
             .view('includes/bottom');
     }
 
@@ -27,6 +29,7 @@ class Index extends BaseController
         return view('includes/header', $data)
             .view('includes/nav')
             .view('contact-us')
+            .view('includes/footer')
             .view('includes/bottom');
     }
 }
