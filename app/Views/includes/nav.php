@@ -50,7 +50,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="<?= base_url('register')?>">Register</a></li>
-                        <li><a class="dropdown-item" href="<?= base_url('register')?>">Login</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url('login')?>">Login</a></li>
                     </ul>
                 </li>
             </ul>
