@@ -16,7 +16,10 @@ $routes->get('register', 'Auth::register');
 $routes->get('login', 'Auth::login');
 
 // itso personnel route
+$routes->get('itso-personnel-login', 'Auth::itsoPersonnel');
 
 // associates route
+$routes->get('associate-login', 'Auth::associate');
 
 // students route
+$routes->get('student-login', 'Auth::student');

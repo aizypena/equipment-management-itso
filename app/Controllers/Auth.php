@@ -18,6 +18,30 @@ class Auth extends BaseController
             .view('login')
             .view('includes/bottom');
     }
+
+    public function itsoPersonnel(): string 
+    {
+        $data['title'] = 'ITSO Personnel - Login';
+        return view('includes/header', $data)
+            .view('itso-personnel-login')
+            .view('includes/bottom');
+    }
+
+    public function associate(): string
+    {
+        $data['title'] = 'Associate - Login';
+        return view('includes/header', $data)
+            .view('associate-login')
+            .view('includes/bottom');
+    }
+
+    public function student(): string
+    {
+        $data['title'] = 'Student - Login';
+        return view('includes/header', $data)
+            .view('student-login')
+            .view('includes/bottom');
+    }
 }
 
 ?>

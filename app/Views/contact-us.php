@@ -60,7 +60,7 @@
                 <div class="card-body">
                     <h5 class="card-title text-success">IT Services Office</h5>
                     <p>Email: <a href="mailto:itso@feutech.edu.ph"
-                            class="text-decoration-none text-success">communityextension@feutech.edu.ph</a></p>
+                            class="text-decoration-none text-success">itso@feutech.edu.ph</a></p>
                     <p>Trunkline: (02) 8281 8888</p>
                     <p>Local No. 132</p>
                 </div>
