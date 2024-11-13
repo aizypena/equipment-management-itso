@@ -70,17 +70,8 @@
                                         <option value="" disabled selected>Select gender</option>
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
-                                        <option value="other">Other</option>
                                     </select>
                                 </div>
-                            </div>
-
-                            <!-- Checkbox -->
-                            <div class="form-check d-flex justify-content-center mb-4">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="newsletter" checked />
-                                <label class="form-check-label" for="newsletter">
-                                    Subscribe to our newsletter
-                                </label>
                             </div>
 
                             <!-- Submit button -->
