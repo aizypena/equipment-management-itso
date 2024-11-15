@@ -29,6 +29,7 @@ body {
                     style="max-width: 80px;">
                 <h2 class="text-light">Reset Password</h2>
             </div>
+
             <div class="card-body">
                 <form action="/reset-password" method="POST">
                     <!-- Email Address -->
@@ -54,16 +55,19 @@ body {
                         <input type="password" id="newPassword" name="newPassword" class="form-control"
                             placeholder="Enter your new password" required>
                     </div>
+
                     <!-- Confirm Password -->
                     <div class="mb-4">
                         <label for="confirmPassword" class="form-label text-light">Confirm Password</label>
                         <input type="password" id="confirmPassword" name="confirmPassword" class="form-control"
                             placeholder="Confirm your new password" required>
                     </div>
+
                     <!-- Submit Button -->
-                    <button type="submit" class="btn btn-reset w-100 py-2 text-dark">Reset Password</button>
+                    <button type="submit" class="btn btn-reset w-100 py-2 mt-4 text-dark">Reset Password</button>
                 </form>
             </div>
+
         </div>
     </div>
 </div>
@@ -73,7 +77,7 @@ const emailInput = document.getElementById('email');
 const sendCodeButton = document.getElementById('sendCodeButton');
 
 // Regular expression for validating email
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 // Enable the "Send Code" button only if a valid email is entered
 emailInput.addEventListener('input', function() {

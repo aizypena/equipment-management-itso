@@ -66,13 +66,13 @@ body {
                                 <select id="course" class="form-select">
                                     <option value="" disabled selected>Select course</option>
                                     <option value="course1">BSCpE</option>
-                                    <option value="course1">BSCS AI</option>
-                                    <option value="course1">BSCS DS</option>
-                                    <option value="course1">BSCS SE</option>
-                                    <option value="course1">BSIT AGD</option>
-                                    <option value="course2">BSIT BA</option>
-                                    <option value="course3">BSIT CST</option>
-                                    <option value="course3">BSIT WMA</option>
+                                    <option value="course2">BSCS AI</option>
+                                    <option value="course3">BSCS DS</option>
+                                    <option value="course4">BSCS SE</option>
+                                    <option value="course5">BSIT AGD</option>
+                                    <option value="course6">BSIT BA</option>
+                                    <option value="course7">BSIT CST</option>
+                                    <option value="course8">BSIT WMA</option>
                                 </select>
                             </div>
 
@@ -81,11 +81,11 @@ body {
                                 <label for="department" class="form-label">Department</label>
                                 <select id="department" class="form-select">
                                     <option value="" disabled selected>Select department</option>
-                                    <option value="department2">Computer Engineering</option>
-                                    <option value="department3">Computer Science</option>
+                                    <option value="department1">Computer Engineering</option>
+                                    <option value="department2">Computer Science</option>
                                     <option value="department3">Humanities and Social Sciences</option>
-                                    <option value="department3">Information Technology</option>
-                                    <option value="department3">Mathematics and Physical Sciences</option>
+                                    <option value="department4">Information Technology</option>
+                                    <option value="department5">Mathematics and Physical Sciences</option>
                                 </select>
                             </div>
 
@@ -156,6 +156,7 @@ body {
 </section>
 
 <script>
+// will disable the sendCodeButton if the sendCode input is empty or the entered email is not valid
 function toggleFields() {
     var userRole = document.getElementById('userRole').value;
     var courseField = document.getElementById('courseField');
