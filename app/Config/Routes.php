@@ -14,6 +14,8 @@ $routes->get('contact-us', 'Index::contact');
 // auth route
 $routes->get('register', 'Auth::register');
 $routes->get('login', 'Auth::login');
+$routes->get('verify-account', 'Auth::verifyAccount');
+$routes->get('forgot-password', 'Auth::forgotPassword');
 
 // itso personnel route
 $routes->get('itso-personnel-login', 'Auth::itsoPersonnel');

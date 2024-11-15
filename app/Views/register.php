@@ -1,25 +1,45 @@
 <style>
-/* Additional styling for aesthetics */
+body {
+    background-color: #0b3612;
+}
+
 .bg-light-custom {
     background-color: #0b3612;
 }
 
-.text-primary-custom {
-    color: #007bff;
+.text-warning-custom {
+    color: #FCBD13;
 }
 
-.form-label-optional::after {
-    font-weight: normal;
-    color: #6c757d;
+.login-txt {
+    color: #0b3612;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Styling for the arrow icon */
+.arrow-icon {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect to move the arrow to the right */
+.login-txt:hover+.arrow-icon {
+    transform: translateX(5px);
 }
 </style>
 
+<!-- Section: Registration Form -->
 <section class="bg-light-custom vh-100 d-flex align-items-center py-5">
     <div class="container">
         <div class="row gx-lg-5 align-items-center">
             <!-- Left Column -->
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <h1 class="my-5 display-4 fw-bold ls-tight text-fff">
+                <h1 class="my-5 display-4 fw-bold ls-tight text-white">
                     FEU Tech <br />
                     <span class="text-warning-custom">Equipment Management</span>
                 </h1>
@@ -30,6 +50,45 @@
                 <div class="card shadow-lg">
                     <div class="card-body py-5 px-md-5">
                         <form>
+                            <!-- User Role Selection -->
+                            <div class="mb-4">
+                                <label for="userRole" class="form-label">Register as</label>
+                                <select id="userRole" class="form-select" required onchange="toggleFields()">
+                                    <option value="" disabled selected>Select role</option>
+                                    <option value="associate">Associate</option>
+                                    <option value="student">Student</option>
+                                </select>
+                            </div>
+
+                            <!-- Additional Fields for Student -->
+                            <div class="mb-4" id="courseField" style="display: none;">
+                                <label for="course" class="form-label">Course</label>
+                                <select id="course" class="form-select">
+                                    <option value="" disabled selected>Select course</option>
+                                    <option value="course1">BSCpE</option>
+                                    <option value="course1">BSCS AI</option>
+                                    <option value="course1">BSCS DS</option>
+                                    <option value="course1">BSCS SE</option>
+                                    <option value="course1">BSIT AGD</option>
+                                    <option value="course2">BSIT BA</option>
+                                    <option value="course3">BSIT CST</option>
+                                    <option value="course3">BSIT WMA</option>
+                                </select>
+                            </div>
+
+                            <!-- Additional Fields for Associate -->
+                            <div class="mb-4" id="departmentField" style="display: none;">
+                                <label for="department" class="form-label">Department</label>
+                                <select id="department" class="form-select">
+                                    <option value="" disabled selected>Select department</option>
+                                    <option value="department2">Computer Engineering</option>
+                                    <option value="department3">Computer Science</option>
+                                    <option value="department3">Humanities and Social Sciences</option>
+                                    <option value="department3">Information Technology</option>
+                                    <option value="department3">Mathematics and Physical Sciences</option>
+                                </select>
+                            </div>
+
                             <!-- Name Fields -->
                             <div class="row">
                                 <div class="col-md-4 mb-4">
@@ -76,27 +135,17 @@
 
                             <!-- Submit button -->
                             <button type="submit" class="btn btn-primary btn-block w-100 mb-4">
-                                Sign up
+                                Register
                             </button>
 
                             <!-- Social Media Sign-Up Options -->
                             <div class="text-center">
-                                <p>or sign up with:</p>
-                                <button type="button" class="btn btn-link btn-floating mx-1">
-                                    <i class="fab fa-facebook-f"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-link btn-floating mx-1">
-                                    <i class="fab fa-google"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-link btn-floating mx-1">
-                                    <i class="fab fa-twitter"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-link btn-floating mx-1">
-                                    <i class="fab fa-github"></i>
-                                </button>
+                                <p>Already have an account?</p>
+                                <a href="<?= base_url('login') ?>" class="login-txt"
+                                    style="color: #0b3612; text-decoration: none;">Login</a>
+                                <span class="arrow-icon">
+                                    <i class="fa-solid fa-arrow-right" style="color: #0b3612;"></i>
+                                </span>
                             </div>
                         </form>
                     </div>
@@ -105,3 +154,22 @@
         </div>
     </div>
 </section>
+
+<script>
+function toggleFields() {
+    var userRole = document.getElementById('userRole').value;
+    var courseField = document.getElementById('courseField');
+    var departmentField = document.getElementById('departmentField');
+
+    if (userRole === 'student') {
+        courseField.style.display = 'block';
+        departmentField.style.display = 'none';
+    } else if (userRole === 'associate') {
+        courseField.style.display = 'none';
+        departmentField.style.display = 'block';
+    } else {
+        courseField.style.display = 'none';
+        departmentField.style.display = 'none';
+    }
+}
+</script>

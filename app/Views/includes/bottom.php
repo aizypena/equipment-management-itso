@@ -6,6 +6,9 @@
 <!-- bootstrap icon -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
 </body>
 
 </html>

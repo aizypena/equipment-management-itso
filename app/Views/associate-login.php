@@ -34,7 +34,7 @@
 
                                     <div class="pt-1 mb-4">
                                         <button data-mdb-button-init data-mdb-ripple-init
-                                            class="btn login-btn btn-lg btn-block" type="button"
+                                            class="btn login-btn w-100 btn-block" type="button"
                                             style="background-color: #0b3612; color: #fff;">Login</button>
                                     </div>
 

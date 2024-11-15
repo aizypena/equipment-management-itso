@@ -42,6 +42,22 @@ class Auth extends BaseController
             .view('student-login')
             .view('includes/bottom');
     }
+
+    public function verifyAccount(): string
+    {
+        $data['title'] = 'Account Verification - Equipment Management System';
+        return view('includes/header', $data)
+            .view('account-verification')
+            .view('includes/bottom');
+    }
+
+    public function forgotPassword(): string
+    {
+        $data['title'] = 'Forgot Password - Equipment Management System';
+        return view('includes/header', $data)
+            .view('forgot-password')
+            .view('includes/bottom');
+    }
 }
 
 ?>
