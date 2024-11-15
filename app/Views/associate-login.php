@@ -38,7 +38,8 @@
                                             style="background-color: #0b3612; color: #fff;">Login</button>
                                     </div>
 
-                                    <a class="small text-muted" href="#!">Forgot password?</a>
+                                    <a class="small text-muted" href="<?= base_url('forgot-password') ?>">Forgot
+                                        password?</a>
                                     <p class="mb-5 pb-lg-2 text-success">Don't have an account? <a
                                             href="<?= base_url('register')?>" class="text-success">Register here</a>
                                     </p>

@@ -33,7 +33,6 @@
                 <a class="btn btn-outline-success my-2" href="<?= base_url('itso-personnel-login') ?>">ITSO
                     Personnel</a>
                 <a class="btn btn-outline-success my-2" href="<?= base_url('associate-login') ?>">Associate</a>
-                <a class="btn btn-outline-success my-2" href="<?= base_url('student-login') ?>">Student</a>
             </div>
         </div>
     </div>

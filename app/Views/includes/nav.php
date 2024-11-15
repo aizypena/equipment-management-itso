@@ -25,7 +25,7 @@
     <div class="container">
         <a class="navbar-brand" href="<?= base_url('/') ?>">
             <img src="public/images/header-logo.png" alt="FEU Tech logo" class="header-logo">
-            <span class="m-0">FEU TECH EQUIPMENT MANAGEMENT</span>
+            <span class="m-0">ITSO EQUIPMENT MANAGEMENT</span>
         </a>
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"

@@ -50,15 +50,16 @@ body {
                 <div class="card shadow-lg">
                     <div class="card-body py-5 px-md-5">
                         <form>
+
                             <!-- User Role Selection -->
-                            <div class="mb-4">
+                            <!-- <div class="mb-4">
                                 <label for="userRole" class="form-label">Register as</label>
                                 <select id="userRole" class="form-select" required onchange="toggleFields()">
                                     <option value="" disabled selected>Select role</option>
                                     <option value="associate">Associate</option>
                                     <option value="student">Student</option>
                                 </select>
-                            </div>
+                            </div> -->
 
                             <!-- Additional Fields for Student -->
                             <div class="mb-4" id="courseField" style="display: none;">
@@ -77,7 +78,7 @@ body {
                             </div>
 
                             <!-- Additional Fields for Associate -->
-                            <div class="mb-4" id="departmentField" style="display: none;">
+                            <div class="mb-4" id="departmentField">
                                 <label for="department" class="form-label">Department</label>
                                 <select id="department" class="form-select">
                                     <option value="" disabled selected>Select department</option>
