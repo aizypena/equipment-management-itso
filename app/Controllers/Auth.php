@@ -1,14 +1,19 @@
 <?php
 namespace App\Controllers;
 
+use App\Models\AssociateUsers;
+use App\Models\Controller;
+
 class Auth extends BaseController
 {
-    public function register(): string
+    public function register()
     {
-        $data['title'] = 'Register - Equipment Management System';
-        return view('includes/header', $data)
-            .view('register')
-            .view('includes/bottom');
+    $associateUsersModel = new AssociateUsers();
+
+    $data['title'] = 'Register - Equipment Management System';
+    return view('includes/header', $data)
+        .view('register')
+        .view('includes/bottom');
     }
 
     public function login(): string
@@ -35,14 +40,6 @@ class Auth extends BaseController
             .view('includes/bottom');
     }
 
-    public function student(): string
-    {
-        $data['title'] = 'Student - Login';
-        return view('includes/header', $data)
-            .view('student-login')
-            .view('includes/bottom');
-    }
-
     public function verifyAccount(): string
     {
         $data['title'] = 'Account Verification - Equipment Management System';
@@ -58,6 +55,8 @@ class Auth extends BaseController
             .view('forgot-password')
             .view('includes/bottom');
     }
+
+    
 }
 
 ?>

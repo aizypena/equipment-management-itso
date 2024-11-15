@@ -13,6 +13,7 @@ $routes->get('contact-us', 'Index::contact');
 
 // auth route
 $routes->get('register', 'Auth::register');
+$routes->post('auth/register', 'Auth::register');
 $routes->get('login', 'Auth::login');
 $routes->get('verify-account', 'Auth::verifyAccount');
 $routes->get('forgot-password', 'Auth::forgotPassword');
