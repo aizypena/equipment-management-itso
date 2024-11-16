@@ -32,6 +32,14 @@ class Index extends BaseController
             .view('includes/footer')
             .view('includes/bottom');
     }
+
+    public function register(): string
+    {
+        $data['title'] = 'Register - Equipment Management System';
+        return view('includes/header', $data)
+            .view('register')
+            .view('includes/bottom');
+    }
 }
 
 ?>

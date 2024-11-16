@@ -24,7 +24,7 @@
 }
 </style>
 
-<div class="container my-5">
+<div class="container my-5 font-regular">
     <div class="about-us-container">
         <!-- Header Section -->
         <div class="about-us-header">

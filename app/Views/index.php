@@ -1,4 +1,4 @@
-<div class="main-container">
+<div class="main-container font-regular">
     <div class="home-container d-flex container vh-100 align-items-center">
         <section class="left-container w-100 w-md-50">
             <div class="description-container">

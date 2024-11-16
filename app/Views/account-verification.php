@@ -67,7 +67,7 @@ body {
 }
 </style>
 
-<div class="container d-flex align-items-center justify-content-center vh-100">
+<div class="container d-flex align-items-center justify-content-center vh-100 font-regular">
     <div class="form-container">
         <div class="card">
             <div class="card-header">

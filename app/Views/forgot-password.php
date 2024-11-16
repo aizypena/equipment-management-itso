@@ -20,7 +20,7 @@ body {
 }
 </style>
 
-<div class="container d-flex align-items-center justify-content-center vh-100">
+<div class="container d-flex align-items-center justify-content-center vh-100 font-regular">
     <div class="col-12 col-sm-8 col-md-6 col-lg-5">
         <div class="card shadow-lg p-4 bg-secondary bg-opacity-10">
             <div class="card-header bg-transparent text-center py-4 rounded-top">

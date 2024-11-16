@@ -4,7 +4,7 @@ footer {
 }
 </style>
 
-<footer class="footer text-white py-5">
+<footer class="footer text-white py-5 font-regular">
     <div class="container">
         <div class="row">
             <!-- About Section -->

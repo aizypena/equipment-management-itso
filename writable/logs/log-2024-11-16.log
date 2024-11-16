@@ -1,0 +1,466 @@
+CRITICAL - 2024-11-16 09:26:06 --> Error: Undefined constant "App\Controllers\firstName"
+[Method: POST, Route: auth/register]
+in APPPATH\Controllers\Auth.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:27:58 --> Error: Undefined constant "App\Controllers\firstName"
+[Method: POST, Route: auth/register]
+in APPPATH\Controllers\Auth.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:28:56 --> Error: Undefined constant "App\Controllers\firstName"
+[Method: POST, Route: register]
+in APPPATH\Controllers\Auth.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:29:45 --> Error: Undefined constant "App\Controllers\first_name"
+[Method: POST, Route: register]
+in APPPATH\Controllers\Auth.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 09:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-16 09:37:31 --> mysqli_sql_exception: Duplicate entry '2@email.com' for key 'email' in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `as...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-11-16 09:37:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2@email.com' for key 'email'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:37:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'2@email.com\', \'$2y$10$Ozup7ciJUw7XkVtrJiaineQ.7WYGYWGrZ67o3CGzSidDa1ja6gtES\', \'2024-11-01\', \'female\', \'Computer Science\', \'2024-11-16 09:37:31\', \'2024-11-16 09:37:31\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'2@email.com\', \'$2y$10$Ozup7ciJUw7XkVtrJiaineQ.7WYGYWGrZ67o3CGzSidDa1ja6gtES\', \'2024-11-01\', \'female\', \'Computer Science\', \'2024-11-16 09:37:31\', \'2024-11-16 09:37:31\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:37:31 --> [Caused by] mysqli_sql_exception: Duplicate entry '2@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'2@email.com\', \'$2y$10$Ozup7ciJUw7XkVtrJiaineQ.7WYGYWGrZ67o3CGzSidDa1ja6gtES\', \'2024-11-01\', \'female\', \'Computer Science\', \'2024-11-16 09:37:31\', \'2024-11-16 09:37:31\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'2@email.com\', \'$2y$10$Ozup7ciJUw7XkVtrJiaineQ.7WYGYWGrZ67o3CGzSidDa1ja6gtES\', \'2024-11-01\', \'female\', \'Computer Science\', \'2024-11-16 09:37:31\', \'2024-11-16 09:37:31\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'2@email.com\', \'$2y$10$Ozup7ciJUw7XkVtrJiaineQ.7WYGYWGrZ67o3CGzSidDa1ja6gtES\', \'2024-11-01\', \'female\', \'Computer Science\', \'2024-11-16 09:37:31\', \'2024-11-16 09:37:31\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 09:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-16 09:38:06 --> mysqli_sql_exception: Duplicate entry '222@email.com' for key 'email' in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `as...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-11-16 09:38:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '222@email.com' for key 'email'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:38:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '222@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'222@email.com\', \'$2y$10$tTafnOaborFNom93ryPQTeCNerxj7pJ5fyenj1jC1gyTFXst3ukP6\', \'2024-11-01\', \'female\', \'Humanities and Social Sciences\', \'2024-11-16 09:38:06\', \'2024-11-16 09:38:06\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'222@email.com\', \'$2y$10$tTafnOaborFNom93ryPQTeCNerxj7pJ5fyenj1jC1gyTFXst3ukP6\', \'2024-11-01\', \'female\', \'Humanities and Social Sciences\', \'2024-11-16 09:38:06\', \'2024-11-16 09:38:06\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:38:06 --> [Caused by] mysqli_sql_exception: Duplicate entry '222@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'222@email.com\', \'$2y$10$tTafnOaborFNom93ryPQTeCNerxj7pJ5fyenj1jC1gyTFXst3ukP6\', \'2024-11-01\', \'female\', \'Humanities and Social Sciences\', \'2024-11-16 09:38:06\', \'2024-11-16 09:38:06\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'222@email.com\', \'$2y$10$tTafnOaborFNom93ryPQTeCNerxj7pJ5fyenj1jC1gyTFXst3ukP6\', \'2024-11-01\', \'female\', \'Humanities and Social Sciences\', \'2024-11-16 09:38:06\', \'2024-11-16 09:38:06\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'2\', \'\', \'2\', \'222@email.com\', \'$2y$10$tTafnOaborFNom93ryPQTeCNerxj7pJ5fyenj1jC1gyTFXst3ukP6\', \'2024-11-01\', \'female\', \'Humanities and Social Sciences\', \'2024-11-16 09:38:06\', \'2024-11-16 09:38:06\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 09:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-16 09:38:31 --> mysqli_sql_exception: Duplicate entry '3@email.com' for key 'email' in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `as...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(24): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-11-16 09:38:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '3@email.com' for key 'email'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:38:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '3@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'3\', \'\', \'3\', \'3@email.com\', \'$2y$10$o3jtcOhCjmnRAzfS.zJnHOzsWdHkHpit0FdhRRlKZ.1l0qku4ZEta\', \'2024-11-01\', \'female\', \'Mathematics and Physical Sciences\', \'2024-11-16 09:38:31\', \'2024-11-16 09:38:31\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'3\', \'\', \'3\', \'3@email.com\', \'$2y$10$o3jtcOhCjmnRAzfS.zJnHOzsWdHkHpit0FdhRRlKZ.1l0qku4ZEta\', \'2024-11-01\', \'female\', \'Mathematics and Physical Sciences\', \'2024-11-16 09:38:31\', \'2024-11-16 09:38:31\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:38:31 --> [Caused by] mysqli_sql_exception: Duplicate entry '3@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'3\', \'\', \'3\', \'3@email.com\', \'$2y$10$o3jtcOhCjmnRAzfS.zJnHOzsWdHkHpit0FdhRRlKZ.1l0qku4ZEta\', \'2024-11-01\', \'female\', \'Mathematics and Physical Sciences\', \'2024-11-16 09:38:31\', \'2024-11-16 09:38:31\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'3\', \'\', \'3\', \'3@email.com\', \'$2y$10$o3jtcOhCjmnRAzfS.zJnHOzsWdHkHpit0FdhRRlKZ.1l0qku4ZEta\', \'2024-11-01\', \'female\', \'Mathematics and Physical Sciences\', \'2024-11-16 09:38:31\', \'2024-11-16 09:38:31\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (\'3\', \'\', \'3\', \'3@email.com\', \'$2y$10$o3jtcOhCjmnRAzfS.zJnHOzsWdHkHpit0FdhRRlKZ.1l0qku4ZEta\', \'2024-11-01\', \'female\', \'Mathematics and Physical Sciences\', \'2024-11-16 09:38:31\', \'2024-11-16 09:38:31\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Auth.php(24): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 09:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-16 09:56:58 --> mysqli_sql_exception: Duplicate entry 'ww@email.com' for key 'email' in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `as...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(23): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-11-16 09:56:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ww@email.com' for key 'email'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Auth.php(23): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:56:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ww@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'ww\', \'\', \'w\', \'ww@email.com\', \'$2y$10$OqI0rwYLgFijyQKh74PWAuEoJ0Q/.UWfnoBZ8inX3PKfwTIjJJg3q\', \'2024-11-09\', \'female\', \'2024-11-16 09:56:58\', \'2024-11-16 09:56:58\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'ww\', \'\', \'w\', \'ww@email.com\', \'$2y$10$OqI0rwYLgFijyQKh74PWAuEoJ0Q/.UWfnoBZ8inX3PKfwTIjJJg3q\', \'2024-11-09\', \'female\', \'2024-11-16 09:56:58\', \'2024-11-16 09:56:58\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Auth.php(23): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 09:56:58 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ww@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'ww\', \'\', \'w\', \'ww@email.com\', \'$2y$10$OqI0rwYLgFijyQKh74PWAuEoJ0Q/.UWfnoBZ8inX3PKfwTIjJJg3q\', \'2024-11-09\', \'female\', \'2024-11-16 09:56:58\', \'2024-11-16 09:56:58\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'ww\', \'\', \'w\', \'ww@email.com\', \'$2y$10$OqI0rwYLgFijyQKh74PWAuEoJ0Q/.UWfnoBZ8inX3PKfwTIjJJg3q\', \'2024-11-09\', \'female\', \'2024-11-16 09:56:58\', \'2024-11-16 09:56:58\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'ww\', \'\', \'w\', \'ww@email.com\', \'$2y$10$OqI0rwYLgFijyQKh74PWAuEoJ0Q/.UWfnoBZ8inX3PKfwTIjJJg3q\', \'2024-11-09\', \'female\', \'2024-11-16 09:56:58\', \'2024-11-16 09:56:58\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Auth.php(23): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 09:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 09:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 10:02:20 --> Error: Call to undefined function set_value()
+[Method: POST, Route: register]
+in APPPATH\Views\register.php on line 86.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH\Controllers\Auth.php(36): view('register')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 10:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 10:02:25 --> Error: Call to undefined function set_value()
+[Method: GET, Route: register]
+in APPPATH\Views\register.php on line 86.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH\Controllers\Index.php(40): view('register')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Index->register()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 10:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 10:02:27 --> Error: Call to undefined function set_value()
+[Method: GET, Route: register]
+in APPPATH\Views\register.php on line 86.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH\Controllers\Index.php(40): view('register')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Index->register()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 10:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 10:02:27 --> Error: Call to undefined function set_value()
+[Method: GET, Route: register]
+in APPPATH\Views\register.php on line 86.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH\Controllers\Index.php(40): view('register')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Index->register()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 10:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 10:02:30 --> Error: Call to undefined function set_value()
+[Method: GET, Route: register]
+in APPPATH\Views\register.php on line 86.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH\Controllers\Index.php(40): view('register')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Index->register()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 10:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-16 10:19:18 --> mysqli_sql_exception: Duplicate entry 'test2@email.com' for key 'email' in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `as...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-11-16 10:19:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'test2@email.com' for key 'email'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Auth.php(25): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 10:19:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'test2@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'test2\', \'\', \'test\', \'test2@email.com\', \'$2y$10$WsTNhKKMvQg1SPOpUqIpUOQ107Eth2QE/nsso1c5xXITPMHlvJlny\', \'2024-11-01\', \'male\', \'2024-11-16 10:19:18\', \'2024-11-16 10:19:18\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'test2\', \'\', \'test\', \'test2@email.com\', \'$2y$10$WsTNhKKMvQg1SPOpUqIpUOQ107Eth2QE/nsso1c5xXITPMHlvJlny\', \'2024-11-01\', \'male\', \'2024-11-16 10:19:18\', \'2024-11-16 10:19:18\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Auth.php(25): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 10:19:18 --> [Caused by] mysqli_sql_exception: Duplicate entry 'test2@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'test2\', \'\', \'test\', \'test2@email.com\', \'$2y$10$WsTNhKKMvQg1SPOpUqIpUOQ107Eth2QE/nsso1c5xXITPMHlvJlny\', \'2024-11-01\', \'male\', \'2024-11-16 10:19:18\', \'2024-11-16 10:19:18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'test2\', \'\', \'test\', \'test2@email.com\', \'$2y$10$WsTNhKKMvQg1SPOpUqIpUOQ107Eth2QE/nsso1c5xXITPMHlvJlny\', \'2024-11-01\', \'male\', \'2024-11-16 10:19:18\', \'2024-11-16 10:19:18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (\'test2\', \'\', \'test\', \'test2@email.com\', \'$2y$10$WsTNhKKMvQg1SPOpUqIpUOQ107Eth2QE/nsso1c5xXITPMHlvJlny\', \'2024-11-01\', \'male\', \'2024-11-16 10:19:18\', \'2024-11-16 10:19:18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `associate_users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Auth.php(25): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-16 10:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

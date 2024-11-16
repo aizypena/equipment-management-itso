@@ -1,4 +1,4 @@
-<div class="container py-5">
+<div class="container py-5 font-regular">
     <h1 class="text-center text-success mb-5">Contact Us</h1>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">

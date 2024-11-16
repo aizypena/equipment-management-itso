@@ -11,6 +11,7 @@ class AssociateUsers extends Model
 
     // Allowed fields for insertion and updating
     protected $allowedFields = [
+        'department',
         'first_name',
         'middle_name',
         'last_name',
@@ -18,7 +19,6 @@ class AssociateUsers extends Model
         'password',
         'birthdate',
         'gender',
-        'department',
     ];
 
     // Enable timestamps for created_at and updated_at

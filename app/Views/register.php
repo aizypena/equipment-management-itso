@@ -34,7 +34,7 @@ body {
 </style>
 
 <!-- Section: Registration Form -->
-<section class="bg-light-custom vh-100 d-flex align-items-center py-5">
+<section class="bg-light-custom vh-100 d-flex align-items-center py-5 font-regular">
     <div class="container">
         <div class="row gx-lg-5 align-items-center">
             <!-- Left Column -->
@@ -49,7 +49,20 @@ body {
             <div class="col-lg-6">
                 <div class="card shadow-lg">
                     <div class="card-body py-5 px-md-5">
-                        <form action="<?= base_url('register') ?>" method="post">
+                        <!-- Flashdata Messages -->
+                        <?php if (session()->getFlashdata('success')): ?>
+                        <div class="alert alert-success">
+                            <?= session()->getFlashdata('success') ?>
+                        </div>
+                        <?php endif; ?>
+
+                        <?php if (session()->getFlashdata('error')): ?>
+                        <div class="alert alert-danger">
+                            <?= session()->getFlashdata('error') ?>
+                        </div>
+                        <?php endif; ?>
+
+                        <form action="<?= base_url('/register') ?>" method="post">
                             <!-- Department Field -->
                             <div class="mb-4" id="departmentField">
                                 <label for="department" class="form-label">Department</label>
@@ -68,17 +81,18 @@ body {
                             <!-- Name Fields -->
                             <div class="row">
                                 <div class="col-md-4 mb-4">
-                                    <label for="firstName" class="form-label">First name</label>
-                                    <input type="text" id="firstName" name="firstName" class="form-control" required />
+                                    <label for="first_name" class="form-label">First name</label>
+                                    <input type="text" id="first_name" name="first_name" class="form-control"
+                                        required />
                                 </div>
                                 <div class="col-md-4 mb-4">
-                                    <label for="middleName" class="form-label form-label-optional">Middle name</label>
-                                    <input type="text" id="middleName" name="middleName" class="form-control"
+                                    <label for="middle_name" class="form-label form-label-optional">Middle name</label>
+                                    <input type="text" id="middle_name" name="middle_name" class="form-control"
                                         placeholder="(Optional)" />
                                 </div>
                                 <div class="col-md-4 mb-4">
-                                    <label for="lastName" class="form-label">Last name</label>
-                                    <input type="text" id="lastName" name="lastName" class="form-control" required />
+                                    <label for="last_name" class="form-label">Last name</label>
+                                    <input type="text" id="last_name" name="last_name" class="form-control" required />
                                 </div>
                             </div>
 
