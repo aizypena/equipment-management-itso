@@ -6,42 +6,48 @@ use App\Models\Controller;
 
 class Auth extends BaseController
 {
+
+    // register function
     public function register()
-{
-    $associateUsers = new AssociateUsers();
+    {
+        $associateUsers = new AssociateUsers();
 
-    // Collect form data
-    $data = [
-        'department' => $this->request->getPost('department'),
-        'first_name' => $this->request->getPost('first_name'),
-        'middle_name' => $this->request->getPost('middle_name'),
-        'last_name' => $this->request->getPost('last_name'),
-        'email' => $this->request->getPost('email'),
-        'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-        'birthdate' => $this->request->getPost('birthdate'),
-        'gender' => $this->request->getPost('gender')
-    ];
+        // Collect form data
+        $data = [
+            'department' => $this->request->getPost('department'),
+            'first_name' => $this->request->getPost('first_name'),
+            'middle_name' => $this->request->getPost('middle_name'),
+            'last_name' => $this->request->getPost('last_name'),
+            'email' => $this->request->getPost('email'),
+            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'birthdate' => $this->request->getPost('birthdate'),
+            'gender' => $this->request->getPost('gender')
+        ];
 
-    // Attempt to save data
-    if ($associateUsers->save($data)) {
-        // Set success message in session
-        session()->setFlashdata('success', 'Registration successful! You can now log in.');
-    } else {
-        // Set error message in session
-        session()->setFlashdata('error', 'Registration failed! Please try again.');
+        // Attempt to save data
+        if ($associateUsers->save($data)) {
+            // Set success message in session
+            session()->setFlashdata('success', 'Registration successful! You can now log in.');
+        } else {
+            // Set error message in session
+            session()->setFlashdata('error', 'Registration failed! Please try again.');
+        }
+
+        // Load the registration view with feedback
+        $data['title'] = 'Register - Equipment Management System';
+        return view('includes/header', $data)
+            . view('register')
+            . view('includes/bottom');
     }
-
-    // Load the registration view with feedback
-    $data['title'] = 'Register - Equipment Management System';
-    return view('includes/header', $data)
-        . view('register')
-        . view('includes/bottom');
-}
 
 
 
     public function login(): string
     {
+        $associateUsers = new AssociateUsers();
+
+        
+
         $data['title'] = 'Login - Equipment Management System';
         return view('includes/header', $data)
             .view('login')

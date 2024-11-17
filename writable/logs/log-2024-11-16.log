@@ -464,3 +464,211 @@ INFO - 2024-11-16 10:28:36 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-11-16 10:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-16 10:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-16 10:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 10:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 12:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 13:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 13:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 13:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-16 13:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-16 13:41:08 --> TypeError: App\Controllers\AssociateDashboard::dashboard(): Return value must be of type string, none returned
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Controllers\AssociateDashboard.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 13:46:40 --> TypeError: App\Controllers\AssociateDashboard::dashboard(): Return value must be of type string, none returned
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Controllers\AssociateDashboard.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 13:46:41 --> TypeError: App\Controllers\AssociateDashboard::dashboard(): Return value must be of type string, none returned
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Controllers\AssociateDashboard.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 13:46:42 --> TypeError: App\Controllers\AssociateDashboard::dashboard(): Return value must be of type string, none returned
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Controllers\AssociateDashboard.php on line 6.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:19:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "associate-side.php"
+[Method: GET, Route: associate-dashboard/home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('associate-side.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('associate-side', [], true)
+ 3 APPPATH\Controllers\AssociateDashboard.php(6): view('associate-side')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:20:01 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(6): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:20:03 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(6): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:20:41 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(9): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:20:43 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(9): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:21:30 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(8): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:21:33 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(8): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:22:49 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(8): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:22:54 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(8): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:24:23 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(8): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:24:25 --> ErrorException: Undefined variable $title
+[Method: GET, Route: associate-dashboard/home]
+in APPPATH\Views\includes\associate-side.php on line 27.
+ 1 APPPATH\Views\includes\associate-side.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\includes\\associate-side.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('includes/associate-side', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(8): view('includes/associate-side')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-16 14:27:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "associate-side.php"
+[Method: GET, Route: associate-dashboard/home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('associate-side.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('associate-side', [], true)
+ 3 APPPATH\Controllers\AssociateDashboard.php(9): view('associate-side')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
