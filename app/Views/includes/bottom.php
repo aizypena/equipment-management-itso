@@ -9,6 +9,8 @@
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
 </body>
 
 </html>

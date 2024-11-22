@@ -1,4 +1,4 @@
-<nav class="bg-black h-screen fixed top-0 left-0 min-w-[260px] py-6 px-4 font-[sans-serif] flex flex-col overflow-auto">
+<nav class="bg-black h-screen fixed top-0 left-0 min-w-[260px] py-6 px-4 font-regular flex flex-col overflow-auto">
     <div class="flex flex-wrap flex-col justify-center items-center cursor-pointer">
         <div class="bg-gray-300 w-12 h-12 rounded-full flex items-center justify-center font-bold text-black text-xl">
             <span>S</span>

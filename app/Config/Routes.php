@@ -23,7 +23,7 @@ $routes->get('itso-personnel-login', 'Auth::itsoPersonnel');
 
 // associates route
 $routes->get('associate-login', 'Auth::associate');
-$routes->get('associate-account/home', 'AssociateDashboard::dashboard');
+$routes->get('associate-account/equipment', 'AssociateDashboard::equipment');
 
 // students route
 $routes->get('student-login', 'Auth::student');

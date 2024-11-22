@@ -8,7 +8,7 @@ class Auth extends BaseController
 {
 
     // register function
-    public function register()
+    public function register(): string
     {
         $associateUsers = new AssociateUsers();
 
@@ -45,8 +45,6 @@ class Auth extends BaseController
     public function login(): string
     {
         $associateUsers = new AssociateUsers();
-
-        
 
         $data['title'] = 'Login - Equipment Management System';
         return view('includes/header', $data)

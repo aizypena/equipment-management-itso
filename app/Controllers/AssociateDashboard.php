@@ -1,13 +1,18 @@
 <?php
 namespace App\Controllers;
 
-class AssociateDashboard extends BaseController {
-    public function dashboard(): string {
-        $data['title'] = 'Associate - Home';
+use App\Models\EquipmentModel;
 
+class AssociateDashboard extends BaseController {
+
+    public function equipment(): string {
+
+        $data['title'] = 'Associate - Home';
         return view('includes/tailwind-header', $data)
         . view('includes/associate-side')
+        . view('associate/equipment')
         . view('includes/associate-bottom');
     }
+
 }
-?>
+

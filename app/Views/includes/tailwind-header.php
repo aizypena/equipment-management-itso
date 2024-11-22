@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><?= esc($title); ?></title>
 
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
@@ -21,9 +22,6 @@
 
     <!-- favicon -->
     <link rel="icon" type="image/png favicon" href="<?= base_url('public/images/header-logo.png') ?>">
-
-    <!-- dynamic title -->
-    <title><?= esc($title); ?></title>
 
 </head>
 
