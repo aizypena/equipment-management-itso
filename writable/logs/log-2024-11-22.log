@@ -111,3 +111,73 @@ in APPPATH\Views\associate\equipment.php on line 19.
  9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-22 16:47:38 --> mysqli_sql_exception: Unknown database 'equipment_management'
+[Method: GET, Route: associate-account/equipment]
+in APPPATH\Views\associate\equipment.php on line 72.
+ 1 APPPATH\Views\associate\equipment.php(72): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'equipment_management')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\associate\\equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('associate/equipment', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(13): view('associate/equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->equipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-22 16:50:40 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: associate-account/equipment]
+in APPPATH\Views\associate\equipment.php on line 26.
+ 1 APPPATH\Views\associate\equipment.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\associate\\equipment.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\associate\\equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('associate/equipment', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(15): view('associate/equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->equipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-22 16:51:36 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: associate-account/equipment]
+in APPPATH\Views\associate\equipment.php on line 26.
+ 1 APPPATH\Views\associate\equipment.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\associate\\equipment.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\associate\\equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('associate/equipment', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(15): view('associate/equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->equipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-22 16:51:37 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: associate-account/equipment]
+in APPPATH\Views\associate\equipment.php on line 26.
+ 1 APPPATH\Views\associate\equipment.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\associate\\equipment.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\associate\\equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('associate/equipment', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(15): view('associate/equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->equipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-22 17:24:12 --> mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES)
+[Method: GET, Route: associate-account/equipment]
+in APPPATH\Views\associate\equipment.php on line 15.
+ 1 APPPATH\Views\associate\equipment.php(15): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\associate\\equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('associate/equipment', [], true)
+ 5 APPPATH\Controllers\AssociateDashboard.php(21): view('associate/equipment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AssociateDashboard->equipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AssociateDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
