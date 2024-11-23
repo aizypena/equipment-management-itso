@@ -39,4 +39,8 @@
     .text-fff {
         color: #fff;
     }
+
+    .border-color {
+        border-color: #0B3612;
+    }
     </style>

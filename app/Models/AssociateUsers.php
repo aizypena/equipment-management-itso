@@ -19,6 +19,7 @@ class AssociateUsers extends Model
         'password',
         'birthdate',
         'gender',
+        'associate_number'
     ];
 
     // Enable timestamps for created_at and updated_at

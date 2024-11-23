@@ -22,8 +22,15 @@ $routes->get('forgot-password', 'Auth::forgotPassword');
 $routes->get('itso-personnel-login', 'Auth::itsoPersonnel');
 
 // associates route
-$routes->get('associate-login', 'Auth::associate');
+$routes->get('associate-account', 'AssociateDashboard::profile');
 $routes->get('associate-account/equipment', 'AssociateDashboard::equipment');
+$routes->get('associate-account/history', 'AssociateDashboard::history');
+$routes->get('associate-account/return', 'AssociateDashboard::return');
+$routes->get('associate-account/borrow', 'AssociateDashboard::borrow');
+
+
+
+$routes->get('associate-login', 'Auth::associate');
 
 // students route
 $routes->get('student-login', 'Auth::student');
