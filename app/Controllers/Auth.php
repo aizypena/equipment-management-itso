@@ -24,6 +24,19 @@ class Auth extends BaseController
             'gender' => $this->request->getPost('gender')
         ];
 
+        //associate number
+        $currentYearMonth = date('Ym');
+        $lastAssociate = $associateUsers->where('associate_number LIKE', "$currentYearMonth-%")->orderBy('associate_number', 'DESC')->first();
+
+        if ($lastAssociate) {
+            $lastNumber = (int)substr($lastAssociate['associate_number'], -4);
+            $newNumber = str_pad($lastNumber + 1, 4, '0', STR_PAD_LEFT);
+        } else {
+            $newNumber = '0001';
+        }
+
+        $data['associate_number'] = $currentYearMonth . $newNumber;
+
         // Attempt to save data
         if ($associateUsers->save($data)) {
             // Set success message in session
@@ -40,17 +53,6 @@ class Auth extends BaseController
             . view('includes/bottom');
     }
 
-
-
-    public function login(): string
-    {
-        $associateUsers = new AssociateUsers();
-
-        $data['title'] = 'Login - Equipment Management System';
-        return view('includes/header', $data)
-            .view('login')
-            .view('includes/bottom');
-    }
 
     public function itsoPersonnel(): string 
     {
@@ -84,7 +86,48 @@ class Auth extends BaseController
             .view('includes/bottom');
     }
 
-    
+    public function login(): string
+    {
+        helper(['form', 'url']);
+        $session = session();
+        $associateUsers = new AssociateUsers();
+
+        if ($this->request->getMethod() == 'post') {
+            $email = $this->request->getPost('email');
+            $password = $this->request->getPost('password');
+
+            $user = $associateUsers->where('email', $email)->first();
+
+            if ($user) {
+                if (password_verify($password, $user['password'])) {
+                    $session->set([
+                        'associate_number' => $user['associate_number'],
+                        'first_name' => $user['first_name'],
+                        'last_name' => $user['last_name'],
+                        'isLoggedIn' => true
+                    ]);
+                    return redirect()->to('/associate/profile');
+                } else {
+                    $session->setFlashdata('error', 'Invalid password');
+                }
+            } else {
+                $session->setFlashdata('error', 'Email not found');
+            }
+        }
+
+        $data['title'] = 'Login - Equipment Management System';
+        return view('includes/header', $data)
+            . view('login')
+            . view('includes/bottom');
+    }
+
+    // flashdata clearing
+    public function clear_flashdata()
+    {
+        session()->remove('success');
+        session()->remove('error');
+        return $this->response->setJSON(['status' => 'success']);
+    }
 }
 
 ?>

@@ -14,7 +14,9 @@ $routes->get('contact-us', 'Index::contact');
 // auth route
 $routes->get('register', 'Index::register');
 $routes->post('register', 'Auth::register');
-$routes->get('login', 'Auth::login');
+
+$routes->get('login', 'Index::login');
+
 $routes->get('verify-account', 'Auth::verifyAccount');
 $routes->get('forgot-password', 'Auth::forgotPassword');
 

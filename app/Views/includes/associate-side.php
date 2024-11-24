@@ -23,7 +23,7 @@
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <ul class="space-y-2 font-medium">
             <li>
-                <a href="<?= base_url('associate-equipment') ?>"
+                <a href="<?= base_url('associate-account/equipment') ?>"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -38,6 +38,7 @@
                     <span class="ms-3">Equipment</span>
                 </a>
             </li>
+
             <li>
                 <a href="<?= base_url('associate-account/history') ?>"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -50,6 +51,7 @@
                     <span class="ms-3">History</span>
                 </a>
             </li>
+
             <li>
                 <a href="<?= base_url('associate-account/borrow') ?>"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -63,6 +65,7 @@
                     <span class="flex-1 ms-3 whitespace-nowrap">Borrow</span>
                 </a>
             </li>
+
             <li>
                 <a href="<?= base_url('associate-account/return') ?>"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -76,9 +79,10 @@
                 </a>
             </li>
         </ul>
+
         <ul class="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
             <li>
-                <a href="#"
+                <a href="<?=base_url('associate-account')?>"
                     class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
