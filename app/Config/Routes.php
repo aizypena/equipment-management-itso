@@ -11,7 +11,6 @@ $routes->get('/', 'Index::index');
 $routes->get('about-us', 'Index::about');
 $routes->get('contact-us', 'Index::contact');
 
-// auth route
 $routes->get('register', 'Index::register');
 $routes->post('register', 'Auth::register');
 
@@ -19,6 +18,9 @@ $routes->post('register', 'Auth::register');
 $routes->get('login', 'Index::login');
 $routes->get('login/associate-account', 'Index::associateAccount');
 $routes->post('associateLogin', 'Auth::associateLogin');
+
+//logout routes
+$routes->get('logout', 'Auth::logout');
 
 $routes->get('verify-account', 'Auth::verifyAccount');
 $routes->get('forgot-password', 'Auth::forgotPassword');

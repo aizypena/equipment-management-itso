@@ -65,15 +65,23 @@ class Auth extends BaseController
         $user = $associateUsers->where('associate_number', $associateNumber)->first();
 
         if ($user && password_verify($password, $user['password'])) {
-            // Set user session data
-            session()->set([
-                'associate_id' => $user['id'],
-                'associate_number' => $user['associate_number'],
-                'logged_in' => true
-            ]);
+            if ($user['status'] === 'active') {
+                // Set user session data
+                session()->set([
+                    'associate_id' => $user['id'],
+                    'associate_number' => $user['associate_number'],
+                    'logged_in' => true
+                ]);
 
-            // Redirect to associate account page
-            return redirect()->to('/associate-account');
+                // Redirect to associate account page
+                return redirect()->to('/associate-account');
+            } else {
+                // Set error message in session
+                session()->setFlashdata('error', 'Your account is inactive. Please contact support.');
+
+                // Redirect back to login page
+                return redirect()->to('/login/associate-account');
+            }
         } else {
             // Set error message in session
             session()->setFlashdata('error', 'Invalid associate number or password.');
@@ -81,6 +89,18 @@ class Auth extends BaseController
             // Redirect back to login page
             return redirect()->to('/login/associate-account');
         }
+    }
+
+    public function logout()
+    {
+        session()->destroy();
+
+        return redirect()->to('/');
+    }
+
+    public function itsoPersonnelLogin()
+    {
+        $itsoUsers = new ITSOUsers();
     }
 
 
