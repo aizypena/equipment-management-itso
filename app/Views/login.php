@@ -32,7 +32,7 @@
             <div class="d-flex flex-column">
                 <a class="btn btn-outline-success my-2" href="<?= base_url('itso-personnel-login') ?>">ITSO
                     Personnel</a>
-                <a class="btn btn-outline-success my-2" href="<?= base_url('associate-login') ?>">Associate</a>
+                <a class="btn btn-outline-success my-2" href="<?= base_url('login/associate-account') ?>">Associate</a>
             </div>
         </div>
     </div>

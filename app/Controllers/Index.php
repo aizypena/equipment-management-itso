@@ -49,6 +49,14 @@ class Index extends BaseController
             .view('login')
             .view('includes/bottom');
     }
+
+    public function associateAccount(): string
+    {
+        $data['title'] = 'Associate - Login';
+        return view('includes/header', $data)
+            .view('associate-login')
+            .view('includes/bottom');
+    }
 }
 
 ?>
