@@ -27,6 +27,7 @@ $routes->get('forgot-password', 'Auth::forgotPassword');
 
 // itso personnel route
 $routes->get('itso-personnel-login', 'Auth::itsoPersonnel');
+$routes->get('itso-personnel', 'PersonnelDashboard::profile');
 
 // associates dashboard route
 $routes->get('associate-account', 'AssociateDashboard::profile');

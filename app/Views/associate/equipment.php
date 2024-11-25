@@ -1,6 +1,12 @@
 <style>
 body {
+    background-color: #f0f0f0;
+    /* Light mode background color */
+}
+
+body.dark {
     background-color: #0b3612;
+    /* Dark mode background color */
 }
 </style>
 
@@ -47,7 +53,7 @@ body {
                     <td class="px-6 py-4 whitespace-nowrap text-gray-800 dark:text-gray-100">
                         <?= ucfirst($item['status']) ?></td>
                     <td class="px-6 py-4 whitespace-nowrap">
-                        <button class="bg-blue-600 dark:bg-green-700 text-white px-3 py-1 rounded">Borrow</button>
+                        <button class="bg-green-700 text-white px-3 py-1 rounded">Borrow</button>
                     </td>
                 </tr>
                 <?php endforeach; ?>
@@ -68,5 +74,19 @@ document.getElementById('filter-input').addEventListener('keyup', function() {
             filterValue));
         row.style.display = isVisible ? '' : 'none';
     });
+});
+
+// Add 'dark' class to body if the user prefers dark mode
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark');
+}
+
+// Listen for changes in the user's color scheme preference
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    if (event.matches) {
+        document.body.classList.add('dark');
+    } else {
+        document.body.classList.remove('dark');
+    }
 });
 </script>

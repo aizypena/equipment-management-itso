@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 use App\Models\EquipmentModel;
+use App\Models\AssociateUsers;
 
 class AssociateDashboard extends BaseController {
 
@@ -28,12 +29,23 @@ class AssociateDashboard extends BaseController {
 
     // profile function
     public function profile(): string {
+        $associateUsers = new AssociateUsers();
 
-        $data['title'] = 'Associate - Profile';
+        // Get the logged-in associate's ID from the session
+        $associateId = session()->get('associate_id');
+
+        // Fetch the associate's details
+        $user = $associateUsers->find($associateId);
+
+        // Prepare data to pass to the view
+        $data = [
+            'title' => 'Associate - Profile',
+            'user' => $user
+        ];
 
         return view('includes/tailwind-header', $data)
             . view('includes/associate-side')
-            . view('associate/profile')
+            . view('associate/profile', $data)
             . view('includes/associate-bottom');
     }
 
