@@ -28,6 +28,10 @@ $routes->get('forgot-password', 'Auth::forgotPassword');
 // itso personnel route
 $routes->get('itso-personnel-login', 'Auth::itsoPersonnel');
 $routes->get('itso-personnel', 'PersonnelDashboard::profile');
+$routes->get('itso-personnel/equipment', 'PersonnelDashboard::equipment');
+$routes->get('itso-personnel/history', 'PersonnelDashboard::history');
+$routes->get('itso-personnel/return', 'PersonnelDashboard::return');
+$routes->get('itso-personnel/users', 'PersonnelDashboard::users');
 
 // associates dashboard route
 $routes->get('associate-account', 'AssociateDashboard::profile');
