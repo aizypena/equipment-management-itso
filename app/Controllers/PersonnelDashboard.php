@@ -1,6 +1,8 @@
 <?php
 namespace App\Controllers;
 
+use App\Models\EquipmentModel;
+
 class PersonnelDashboard extends BaseController {
 
     public function profile() {
@@ -13,7 +15,13 @@ class PersonnelDashboard extends BaseController {
     }
     
     public function equipment() {
-        $data['title'] = 'ITSO Personnel - Equipment';
+        $equipmentModel = new EquipmentModel();
+
+        $school_equipment = $equipmentModel->findAll();
+        $data = [
+            'title' => 'ITSO Personnel - Equipment',
+            'school_equipment' => $school_equipment
+        ];
 
         return view('includes/tailwind-header', $data)
             . view('includes/personnel-side')

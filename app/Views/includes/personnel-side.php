@@ -48,6 +48,7 @@
                             d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z"
                             clip-rule="evenodd" />
                     </svg>
+
                     <span class="ms-3">History</span>
                 </a>
             </li>
@@ -79,7 +80,6 @@
                     </svg>
 
 
-
                     <span class="ms-3">Users</span>
                 </a>
             </li>
@@ -96,7 +96,6 @@
                             d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
                             clip-rule="evenodd" />
                     </svg>
-
 
                     <span class="ms-3">Profile</span>
                 </a>
