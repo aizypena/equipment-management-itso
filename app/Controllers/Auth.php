@@ -91,6 +91,44 @@ class Auth extends BaseController
         }
     }
 
+    public function personnelLogin()
+    {
+        $users = new Users();
+
+        // Get form data
+        $associateNumber = $this->request->getPost('associateNumber');
+        $password = $this->request->getPost('password');
+
+        // Find user by associate number
+        $user = $users->where('school_id', $associateNumber)->first();
+
+        if ($user && password_verify($password, $user['password'])) {
+            if ($user['role'] === 'itso_personnel') {
+                // Set user session data
+                session()->set([
+                    'associate_id' => $user['id'],
+                    'school_id' => $user['school_id'],
+                    'logged_in' => true
+                ]);
+
+                // Redirect to ITSO personnel dashboard
+                return redirect()->to('itso-personnel');
+            } else {
+                // Set error message in session
+                session()->setFlashdata('error', 'Only ITSO personnel can log in.');
+
+                // Redirect back to login page
+                return redirect()->to('/itso-personnel-login');
+            }
+        } else {
+            // Set error message in session
+            session()->setFlashdata('error', 'Invalid personnel number or password.');
+
+            // Redirect back to login page
+            return redirect()->to('/itso-personnel-login');
+        }
+    }
+
     public function logout()
     {
         session()->destroy();

@@ -49,8 +49,6 @@
                             onclick="showForm('update', <?= $item['equipment_id'] ?>)">Edit</button>
                         <button class="bg-red-700 text-white px-3 py-1 rounded"
                             onclick="deleteEquipment(<?= $item['equipment_id'] ?>)">Delete</button>
-                        <button class="bg-yellow-600 text-white px-3 py-1 rounded"
-                            onclick="assign(<?= $item['equipment_id'] ?>)">Assign</button>
                     </td>
                 </tr>
                 <?php endforeach; ?>
@@ -127,18 +125,16 @@ function showForm(action, id = null) {
         form.reset();
         title.textContent = 'Add Equipment';
     } else if (action === 'update') {
-        // Fetch and populate the form with data for the given id (mock data used here)
-        const equipment = {
-            equipment_id: 1,
-            name: 'Projector',
-            category: 'Electronics',
-            status: 'available'
-        };
-        document.getElementById('crud-id').value = equipment.equipment_id;
-        document.getElementById('crud-name').value = equipment.name;
-        document.getElementById('crud-category').value = equipment.category;
-        document.getElementById('crud-status').value = equipment.status;
-        title.textContent = 'Edit Equipment';
+        // Fetch and populate the form with data for the given id
+        fetch(`<?= base_url('personnel/equipment/get') ?>/${id}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('crud-id').value = data.equipment_id;
+                document.getElementById('crud-name').value = data.name;
+                document.getElementById('crud-category').value = data.category;
+                document.getElementById('crud-status').value = data.status;
+                title.textContent = 'Edit Equipment';
+            });
     }
 
     modal.classList.remove('hidden');
@@ -150,15 +146,53 @@ function hideForm() {
 }
 
 function deleteEquipment(id) {
-    // Add your AJAX request to delete the equipment by id
-    alert('Equipment with ID ' + id + ' deleted.');
+    if (confirm('Are you sure you want to delete this equipment?')) {
+        fetch(`<?= base_url('personnel/equipment/delete') ?>/${id}`, {
+                method: 'DELETE'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Equipment deleted successfully!');
+                    location.reload(); // Refresh the page to update the equipment list
+                } else {
+                    alert('Failed to delete equipment. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            });
+    }
 }
 
 // Handle form submission
 document.getElementById('crud-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    // Add your AJAX request to save the form data
-    alert('Form submitted.');
-    hideForm();
+
+    const formData = new FormData(this);
+    const id = document.getElementById('crud-id').value;
+    const url = id ? `<?= base_url('personnel/equipment/update') ?>/${id}` :
+        '<?= base_url('personnel/equipment/add') ?>';
+    const method = id ? 'PUT' : 'POST';
+
+    fetch(url, {
+            method: method,
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Equipment saved successfully!');
+                hideForm();
+                location.reload(); // Refresh the page to update the equipment list
+            } else {
+                alert('Failed to save equipment. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again.');
+        });
 });
 </script>

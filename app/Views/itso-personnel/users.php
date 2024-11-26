@@ -11,6 +11,7 @@
             <select id="userType" name="userType"
                 class="block w-64 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-700">
                 <option value="associates">Associates</option>
+                <option value="students">ITSO Personnel</option>
                 <option value="students">Students</option>
             </select>
         </div>

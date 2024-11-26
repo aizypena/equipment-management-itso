@@ -30,6 +30,12 @@
                         <div class="col-md-6 col-lg-7 d-flex align-items-center">
                             <div class="card-body p-4 p-lg-5 text-black">
 
+                                <?php if (session()->getFlashdata('error')): ?>
+                                <div class="alert alert-danger">
+                                    <?= session()->getFlashdata('error') ?>
+                                </div>
+                                <?php endif; ?>
+
                                 <form action="<?= base_url('itsoPersonnelLogin') ?>" method="post">
                                     <div class="d-flex align-items-center mb-3 pb-1">
                                         <img src="https://i.ibb.co/Kb787w4/header-logo.png" alt="FEU Tech Logo"
@@ -80,8 +86,6 @@
         </div>
     </div>
 </section>
-
-
 
 <!-- FontAwesome for eye icon -->
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>

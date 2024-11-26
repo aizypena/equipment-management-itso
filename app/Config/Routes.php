@@ -24,6 +24,8 @@ $routes->get('logout', 'Auth::logout');
 
 $routes->get('verify-account', 'Auth::verifyAccount');
 $routes->get('forgot-password', 'Auth::forgotPassword');
+$routes->post('itsoPersonnelLogin', 'Auth::personnelLogin');
+
 
 // itso personnel route
 $routes->get('itso-personnel-login', 'Auth::itsoPersonnel');
@@ -32,6 +34,11 @@ $routes->get('itso-personnel/equipment', 'PersonnelDashboard::equipment');
 $routes->get('itso-personnel/history', 'PersonnelDashboard::history');
 $routes->get('itso-personnel/return', 'PersonnelDashboard::return');
 $routes->get('itso-personnel/users', 'PersonnelDashboard::users');
+
+$routes->post('itso-personnel/equipment/add', 'PersonnelController::addEquipment');
+$routes->put('itso-personnel/equipment/update/(:num)', 'PersonnelController::updateEquipment/$1');
+$routes->delete('itso-personnel/equipment/delete/(:num)', 'PersonnelController::deleteEquipment/$1');
+$routes->get('itso-personnel/equipment/get/(:num)', 'PersonnelController::getEquipment/$1');
 
 // associates dashboard route
 $routes->get('associate-account', 'AssociateDashboard::profile');
