@@ -49,3 +49,6 @@ $routes->get('associate-account/borrow', 'AssociateDashboard::borrow');
 
 // students route
 $routes->get('student-login', 'Auth::student');
+
+// test
+$routes->get('viewUsers', 'PersonnelDashboard::usersView');

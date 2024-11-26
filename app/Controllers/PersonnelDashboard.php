@@ -6,12 +6,25 @@ use App\Models\Users;
 
 class PersonnelDashboard extends BaseController {
 
-    public function profile() {
-        $data['title'] = 'ITSO Personnel - Profile';
+    public function profile()
+    {
+        $usersModel = new Users();
+
+        // Get the logged-in personnel's school ID from the session
+        $schoolId = session()->get('school_id'); // Use 'school_id' from the session
+
+        // Fetch the personnel's details using school_id
+        $user = $usersModel->where('school_id', $schoolId)->first();
+
+        // Prepare data to pass to the view
+        $data = [
+            'title' => 'ITSO Personnel - Profile',
+            'user' => $user
+        ];
 
         return view('includes/tailwind-header', $data)
             . view('includes/personnel-side')
-            . view('itso-personnel/profile')
+            . view('itso-personnel/profile', $data)
             . view('includes/associate-bottom');
     }
     
@@ -44,7 +57,7 @@ class PersonnelDashboard extends BaseController {
 
         return view('includes/tailwind-header', $data)
             . view('includes/personnel-side')
-            . view('itso-personnel/return')
+            .view('itso-personnel/return')
             . view('includes/associate-bottom');
     }
 
@@ -64,6 +77,17 @@ class PersonnelDashboard extends BaseController {
         return view('includes/tailwind-header', $data)
             . view('includes/personnel-side')
             . view('itso-personnel/users', $data)
+            . view('includes/associate-bottom');
+    }
+
+    public function usersView() {
+        
+        $data = [
+            'title' => 'ITSO Personnel - View Users',
+        ];
+
+        return view('includes/tailwind-header', $data)
+            . view('itso-personnel/users-view')
             . view('includes/associate-bottom');
     }
 }

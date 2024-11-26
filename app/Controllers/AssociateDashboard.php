@@ -13,20 +13,13 @@ class AssociateDashboard extends BaseController {
         $data['title'] = 'Associate - Equipment';
         $data['equipment'] = $equipmentModel->findAll();
 
-        // Debugging: Print the fetched data
-        // echo '<pre>';
-        // print_r($data['equipment']);
-        // echo '</pre>';
-        // exit;
-
         return view('includes/tailwind-header', $data)
             . view('includes/associate-side')
             . view('associate/equipment', $data)
             . view('includes/associate-bottom');
     }
 
-
-
+    
     public function profile()
     {
     $usersModel = new Users();
