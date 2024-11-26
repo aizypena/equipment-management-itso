@@ -2,7 +2,7 @@
 namespace App\Controllers;
 
 use App\Models\EquipmentModel;
-use App\Models\AssociateUsers;
+use App\Models\Users;
 
 class AssociateDashboard extends BaseController {
 
@@ -27,26 +27,26 @@ class AssociateDashboard extends BaseController {
 
 
 
-    // profile function
-    public function profile(): string {
-        $associateUsers = new AssociateUsers();
+    public function profile()
+    {
+    $usersModel = new Users();
 
-        // Get the logged-in associate's ID from the session
-        $associateId = session()->get('associate_id');
+    // Get the logged-in associate's ID from the session
+    $associateId = session()->get('associate_id');
 
-        // Fetch the associate's details
-        $user = $associateUsers->find($associateId);
+    // Fetch the associate's details
+    $user = $usersModel->find($associateId);
 
-        // Prepare data to pass to the view
-        $data = [
-            'title' => 'Associate - Profile',
-            'user' => $user
-        ];
+    // Prepare data to pass to the view
+    $data = [
+        'title' => 'Associate - Profile',
+        'user' => $user
+    ];
 
-        return view('includes/tailwind-header', $data)
-            . view('includes/associate-side')
-            . view('associate/profile', $data)
-            . view('includes/associate-bottom');
+    return view('includes/tailwind-header', $data)
+        . view('includes/associate-side')
+        . view('associate/profile', $data)
+        . view('includes/associate-bottom');
     }
 
 

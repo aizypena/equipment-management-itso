@@ -26,7 +26,7 @@ body.dark {
                 <h1 class="mt-4 text-3xl font-bold text-gray-800 dark:text-white">
                     <?= htmlspecialchars($user['first_name'] . ' ' . $user['last_name']) ?></h1>
                 <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">Associate Number:
-                    <?= htmlspecialchars($user['associate_number']) ?></p>
+                    <?= htmlspecialchars($user['school_id']) ?></p>
                 <p class="mt-1 text-lg text-gray-600 dark:text-gray-300">Department:
                     <?= htmlspecialchars($user['department']) ?></p>
                 <?php else: ?>

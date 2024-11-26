@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-use App\Models\AssociateUsers;
+use App\Models\Users;
 use App\Models\Controller;
 
 class Auth extends BaseController
@@ -10,7 +10,7 @@ class Auth extends BaseController
     // register function
     public function register(): string
     {
-        $associateUsers = new AssociateUsers();
+        $users = new Users();
 
         // Collect form data
         $data = [
@@ -26,19 +26,19 @@ class Auth extends BaseController
 
         // Generate associate number
         $currentYearMonth = date('Ym');
-        $lastAssociate = $associateUsers->where('associate_number LIKE', "$currentYearMonth%")
-                                        ->orderBy('associate_number', 'DESC')
+        $lastAssociate = $users->where('school_id LIKE', "$currentYearMonth%")
+                                        ->orderBy('school_id', 'DESC')
                                         ->first();
         if ($lastAssociate) {
-            $lastNumber = (int)substr($lastAssociate['associate_number'], -4);
+            $lastNumber = (int)substr($lastAssociate['school_id'], -4);
             $newNumber = str_pad($lastNumber + 1, 4, '0', STR_PAD_LEFT);
         } else {
             $newNumber = '0001';
         }
-        $data['associate_number'] = $currentYearMonth . $newNumber;
+        $data['school_id'] = $currentYearMonth . $newNumber;
 
         // Attempt to save data
-        if ($associateUsers->save($data)) {
+        if ($users->save($data)) {
             // Set success message in session
             session()->setFlashdata('success', 'Registration successful! You can now log in.');
         } else {
@@ -55,21 +55,21 @@ class Auth extends BaseController
 
     public function associateLogin()
     {
-        $associateUsers = new AssociateUsers();
+        $users = new Users();
 
         // Get form data
         $associateNumber = $this->request->getPost('associateNumber');
         $password = $this->request->getPost('password');
 
         // Find user by associate number
-        $user = $associateUsers->where('associate_number', $associateNumber)->first();
+        $user = $users->where('school_id', $associateNumber)->first();
 
         if ($user && password_verify($password, $user['password'])) {
             if ($user['status'] === 'active') {
                 // Set user session data
                 session()->set([
                     'associate_id' => $user['id'],
-                    'associate_number' => $user['associate_number'],
+                    'school_id' => $user['school_id'],
                     'logged_in' => true
                 ]);
 

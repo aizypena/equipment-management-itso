@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AssociateUsers extends Model
+class Users extends Model
 {
-    protected $table      = 'associate_users'; // Name of your table
+    protected $table      = 'users'; // Name of your table
     protected $primaryKey = 'id';    // Primary key
 
     // Allowed fields for insertion and updating
@@ -19,7 +19,7 @@ class AssociateUsers extends Model
         'password',
         'birthdate',
         'gender',
-        'associate_number'
+        'school_id'
     ];
 
     // Enable timestamps for created_at and updated_at

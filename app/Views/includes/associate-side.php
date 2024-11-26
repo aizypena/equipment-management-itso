@@ -84,7 +84,7 @@
             </li>
 
             <li>
-                <a href="<?= base_url('logout') ?>"
+                <a href="javascript:void(0)" onclick="showLogoutModal()"
                     class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -92,12 +92,32 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2" />
                     </svg>
-
                     <span class="ms-3">Logout</span>
                 </a>
             </li>
-
-
         </ul>
     </div>
 </aside>
+
+<!-- Logout Confirmation Modal -->
+<div id="logoutModal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-gray-900 bg-opacity-50">
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
+        <h2 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">Confirm Logout</h2>
+        <p class="mb-4 text-gray-600 dark:text-gray-300">Are you sure you want to log out?</p>
+        <div class="flex justify-end">
+            <button onclick="hideLogoutModal()"
+                class="mr-4 px-4 py-2 rounded bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-300">Cancel</button>
+            <a href="<?= base_url('logout') ?>" class="px-4 py-2 rounded bg-red-600 text-white">Logout</a>
+        </div>
+    </div>
+</div>
+
+<script>
+function showLogoutModal() {
+    document.getElementById('logoutModal').classList.remove('hidden');
+}
+
+function hideLogoutModal() {
+    document.getElementById('logoutModal').classList.add('hidden');
+}
+</script>

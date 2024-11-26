@@ -49,7 +49,7 @@
                             onclick="showForm('update', <?= $item['equipment_id'] ?>)">Edit</button>
                         <button class="bg-red-700 text-white px-3 py-1 rounded"
                             onclick="deleteEquipment(<?= $item['equipment_id'] ?>)">Delete</button>
-                        <button class="bg-yellow-700 text-white px-3 py-1 rounded"
+                        <button class="bg-yellow-600 text-white px-3 py-1 rounded"
                             onclick="assign(<?= $item['equipment_id'] ?>)">Assign</button>
                     </td>
                 </tr>

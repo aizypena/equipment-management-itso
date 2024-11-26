@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 use App\Models\EquipmentModel;
+use App\Models\Users;
 
 class PersonnelDashboard extends BaseController {
 
@@ -47,12 +48,22 @@ class PersonnelDashboard extends BaseController {
             . view('includes/associate-bottom');
     }
 
-    public function users() {
-        $data['title'] = 'ITSO Personnel - Users';
+    public function users()
+    {
+        $usersModel = new Users();
+
+        // Fetch all users
+        $users = $usersModel->findAll();
+
+        // Prepare data to pass to the view
+        $data = [
+            'title' => 'ITSO Personnel - Users',
+            'users' => $users
+        ];
 
         return view('includes/tailwind-header', $data)
             . view('includes/personnel-side')
-            . view('itso-personnel/users')
+            . view('itso-personnel/users', $data)
             . view('includes/associate-bottom');
     }
 }
