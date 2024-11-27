@@ -7,11 +7,15 @@ use App\Models\Users;
 class AssociateDashboard extends BaseController {
 
     // equipment function
-    public function equipment(): string {
+    public function equipment() {
         
         $equipmentModel = new EquipmentModel();
         $data['title'] = 'Associate - Equipment';
         $data['equipment'] = $equipmentModel->findAll();
+
+        if(!session()->has('logged_in')){
+            return redirect()->to('login/associate-account');
+        }
 
         return view('includes/tailwind-header', $data)
             . view('includes/associate-side')
@@ -36,6 +40,10 @@ class AssociateDashboard extends BaseController {
         'user' => $user
     ];
 
+    if(!session()->has('logged_in')){
+            return redirect()->to('login/associate-account');
+        }
+
     return view('includes/tailwind-header', $data)
         . view('includes/associate-side')
         . view('associate/profile', $data)
@@ -49,6 +57,10 @@ class AssociateDashboard extends BaseController {
 
         $data['title'] = 'Associate - History';
 
+        if(!session()->has('userlogged')){
+            return redirect()->to('login/associate-account');
+        }
+
         return view('includes/tailwind-header', $data)
             . view('includes/associate-side')
             . view('associate/history')
@@ -57,10 +69,14 @@ class AssociateDashboard extends BaseController {
 
 
 
-    // history function
+    // return function
     public function return(): string {
 
         $data['title'] = 'Associate - Return';
+
+        if(!session()->has('logged_in')){
+            return redirect()->to('login/associate-account');
+        }
 
         return view('includes/tailwind-header', $data)
             . view('includes/associate-side')
@@ -73,6 +89,10 @@ class AssociateDashboard extends BaseController {
     //borrow function
     public function borrow(): string {
         $data['title'] = 'Associate - Borrow Equipment';
+
+        if(!session()->has('logged_in')){
+            return redirect()->to('login/associate-account');
+        }
 
         return view('includes/tailwind-header', $data)
             . view('includes/associate-side')

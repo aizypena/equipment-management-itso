@@ -8,6 +8,10 @@ class PersonnelDashboard extends BaseController {
 
     public function profile()
     {
+        if(!session()->has('logged_in')){
+            return redirect()->to('itso-personnel-login');
+        }
+        
         $usersModel = new Users();
 
         // Get the logged-in personnel's school ID from the session
@@ -37,6 +41,10 @@ class PersonnelDashboard extends BaseController {
             'school_equipment' => $school_equipment
         ];
 
+        if(!session()->has('logged_in')){
+            return redirect()->to('itso-personnel-login');
+        }
+
         return view('includes/tailwind-header', $data)
             . view('includes/personnel-side')
             . view('itso-personnel/equipment')
@@ -46,6 +54,10 @@ class PersonnelDashboard extends BaseController {
     public function history() {
         $data['title'] = 'ITSO Personnel - History';
 
+        if(!session()->has('logged_in')){
+            return redirect()->to('itso-personnel-login');
+        }
+
         return view('includes/tailwind-header', $data)
             . view('includes/personnel-side')
             . view('itso-personnel/history')
@@ -54,6 +66,10 @@ class PersonnelDashboard extends BaseController {
 
     public function return() {
         $data['title'] = 'ITSO Personnel - Return';
+
+        if(!session()->has('logged_in')){
+            return redirect()->to('itso-personnel-login');
+        }
 
         return view('includes/tailwind-header', $data)
             . view('includes/personnel-side')
@@ -68,6 +84,10 @@ class PersonnelDashboard extends BaseController {
         // Fetch all users
         $users = $usersModel->findAll();
 
+        if(!session()->has('logged_in')){
+            return redirect()->to('itso-personnel-login');
+        }
+
         // Prepare data to pass to the view
         $data = [
             'title' => 'ITSO Personnel - Users',
@@ -81,6 +101,10 @@ class PersonnelDashboard extends BaseController {
     }
 
     public function usersView() {
+
+        if(!session()->has('logged_in')){
+            return redirect()->to('itso-personnel-login');
+        }
         
         $data = [
             'title' => 'ITSO Personnel - View Users',

@@ -1,5 +1,10 @@
 <body>
-    <div class="w-full mx-auto p-4 min-h-screen bg-gray-100 dark:bg-gray-900 font-regular">
+    <div class="w-full px-4 sm:px-6 lg:px-8 mx-auto p-4 min-h-screen bg-gray-100 dark:bg-gray-900 font-regular">
+        <button
+            class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4"
+            onclick="history.back()">
+            Back
+        </button>
         <form class="bg-white dark:bg-gray-800 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
             <h1 class="text-2xl font-bold text-gray-800 dark:text-white mb-6 text-center">User Details</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -74,12 +79,9 @@
                     <label class="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2" for="gender">
                         Gender
                     </label>
-                    <select
-                        class="shadow border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="gender" type="text" placeholder="Male/Female">
                 </div>
                 <div>
                     <label class="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2" for="department">
@@ -92,8 +94,8 @@
             </div>
             <div class="mt-6 flex justify-center">
                 <button
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="button">
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-not-allowed opacity-50"
+                    type="button" disabled>
                     Save
                 </button>
             </div>
