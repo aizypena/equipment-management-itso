@@ -53,6 +53,7 @@ class Auth extends BaseController
             . view('includes/bottom');
     }
 
+
     public function associateLogin()
     {
         $users = new Users();
@@ -65,7 +66,7 @@ class Auth extends BaseController
         $user = $users->where('school_id', $associateNumber)->first();
 
         if ($user && password_verify($password, $user['password'])) {
-            if ($user['status'] === 'active') {
+            if ($user['status'] == 1) { // Check if the status is 1 (active)
                 // Set user session data
                 session()->set([
                     'associate_id' => $user['id'],
@@ -77,7 +78,7 @@ class Auth extends BaseController
                 return redirect()->to('/associate-account');
             } else {
                 // Set error message in session
-                session()->setFlashdata('error', 'Your account is inactive. Please contact support.');
+                session()->setFlashdata('error', 'Your account is not yet activated. Please check your email to activate your account.');
 
                 // Redirect back to login page
                 return redirect()->to('/login/associate-account');
