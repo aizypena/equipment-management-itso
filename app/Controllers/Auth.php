@@ -7,7 +7,65 @@ use App\Models\Controller;
 class Auth extends BaseController
 {
 
-    // register function
+    public function activateAccount($encodedActivationCode)
+    {
+        $users = new Users();
+
+        // Decode the activation code
+        $activationCode = urldecode($encodedActivationCode);
+
+        // Debugging: Check the decoded activation code
+        log_message('debug', 'Decoded activation code: ' . $activationCode);
+
+        // Find user by activation code
+        $user = $users->where('activation_code', $activationCode)->first();
+
+        // Debugging: Check if user is found
+        if ($user) {
+            log_message('debug', 'User found with activation code: ' . $activationCode);
+        } else {
+            log_message('debug', 'No user found with activation code: ' . $activationCode);
+        }
+
+        if ($user) {
+            // Check if the user is already activated
+            if ($user['status'] == 1) {
+                // Set error message in session
+                session()->setFlashdata('error', 'Your account is already activated.');
+
+                // Redirect to login page
+                return redirect()->to('/login/associate-account');
+            } else {
+                // Update user status to 1 (active)
+                $data = [
+                    'status' => 1,
+                    'activation_code' => null // Clear the activation code
+                ];
+                $users->update($user['id'], $data);
+
+                // Debugging: Check if status update is successful
+                $updatedUser = $users->find($user['id']);
+                if ($updatedUser['status'] == 1) {
+                    log_message('debug', 'User status updated to active.');
+                } else {
+                    log_message('debug', 'Failed to update user status.');
+                }
+
+                // Set success message in session
+                session()->setFlashdata('success', 'Your account has been activated. You can now log in.');
+
+                // Redirect to login page
+                return redirect()->to('/login/associate-account');
+            }
+        } else {
+            // Set error message in session
+            session()->setFlashdata('error', 'Invalid activation code.');
+
+            // Redirect to login page
+            return redirect()->to('/login/associate-account');
+        }
+    }
+
     public function register(): string
     {
         $users = new Users();
@@ -22,8 +80,9 @@ class Auth extends BaseController
             'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
             'birthdate' => $this->request->getPost('birthdate'),
             'gender' => $this->request->getPost('gender'),
-            'status' => '0', // Set default status to '0' (inactive)
-            'role' => $this->request->getPost('role')
+            'status' => 0, // Set default status to 0 (inactive)
+            'role' => $this->request->getPost('role'),
+            'activation_code' => uniqid() // Generate a unique activation code
         ];
 
         $rules = [
@@ -51,8 +110,11 @@ class Auth extends BaseController
 
         // Attempt to save data
         if ($users->save($data)) {
+            // Encode the activation code
+            $encodedActivationCode = urlencode($data['activation_code']);
+
             // Send activation email
-            $message = "Hello " . $data['first_name'] . ",<br><br>Thank you for registering. Please activate your account by clicking the link below:<br><br><a href='" . base_url('activate/' . $data['email']) . "'>Activate Account</a>";
+            $message = "Hello " . $data['first_name'] . ",<br><br>Thank you for registering. Please activate your account by clicking the link below:<br><br><a href='" . base_url('activate/' . $encodedActivationCode) . "'>Activate Account</a>";
             $email = \Config\Services::email(); // Instantiate an email object
             $email->setTo($data['email']);
             $email->setSubject('Account Registration and Activation');

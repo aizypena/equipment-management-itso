@@ -19,13 +19,13 @@
 
                         <?php if ($success): ?>
                         <div class="alert alert-success">
-                            <?= $success ?>
+                            <?= is_array($success) ? implode(', ', $success) : $success ?>
                         </div>
                         <?php endif; ?>
 
                         <?php if ($error): ?>
                         <div class="alert alert-danger">
-                            <?= $error ?>
+                            <?= is_array($error) ? implode(', ', $error) : $error ?>
                         </div>
                         <?php endif; ?>
 

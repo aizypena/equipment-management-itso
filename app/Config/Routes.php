@@ -52,3 +52,6 @@ $routes->get('student-login', 'Auth::student');
 
 // test
 $routes->get('viewUsers', 'PersonnelDashboard::usersView');
+
+//activate account
+$routes->get('activate/(:any)', 'Auth::activateAccount/$1');

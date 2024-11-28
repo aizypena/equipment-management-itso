@@ -19,7 +19,9 @@ class Users extends Model
         'password',
         'birthdate',
         'gender',
-        'school_id'
+        'school_id',
+        'status',
+        'activation_code'
     ];
 
     // Enable timestamps for created_at and updated_at
