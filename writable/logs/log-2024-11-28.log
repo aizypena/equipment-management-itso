@@ -1,0 +1,398 @@
+INFO - 2024-11-28 01:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 01:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 02:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 02:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:08:34 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-28 03:08:34 --> 220 smtp.gmail.com ESMTP d2e1a72fcca58-7254176129fsm346691b3a.4 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7254176129fsm346691b3a.4 - gsmtp
+
+CRITICAL - 2024-11-28 03:08:34 --> Error: Call to undefined method CodeIgniter\Email\Email::print_debugger()
+[Method: POST, Route: register]
+in APPPATH\Controllers\Auth.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-28 03:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:12:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-28 03:12:23 --> 220 smtp.gmail.com ESMTP d9443c01a7336-215218f22dasm3041125ad.43 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-215218f22dasm3041125ad.43 - gsmtp
+
+INFO - 2024-11-28 03:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:16:35 --> mysqli_sql_exception: Duplicate entry 'jajilos544@kindomd.com' for key 'email' in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(53): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-11-28 03:16:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'jajilos544@kindomd.com' for key 'email'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (:department:, :first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :school_id:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Auth.php(53): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-28 03:16:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'jajilos544@kindomd.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$A9moBQjry3KQS1Es2s/DiOL6ly8oA7wTiob7fcHnQ1bF8IRKRoObC\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:16:35\', \'2024-11-28 03:16:35\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$A9moBQjry3KQS1Es2s/DiOL6ly8oA7wTiob7fcHnQ1bF8IRKRoObC\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:16:35\', \'2024-11-28 03:16:35\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (:department:, :first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :school_id:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Auth.php(53): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-28 03:16:35 --> [Caused by] mysqli_sql_exception: Duplicate entry 'jajilos544@kindomd.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$A9moBQjry3KQS1Es2s/DiOL6ly8oA7wTiob7fcHnQ1bF8IRKRoObC\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:16:35\', \'2024-11-28 03:16:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$A9moBQjry3KQS1Es2s/DiOL6ly8oA7wTiob7fcHnQ1bF8IRKRoObC\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:16:35\', \'2024-11-28 03:16:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$A9moBQjry3KQS1Es2s/DiOL6ly8oA7wTiob7fcHnQ1bF8IRKRoObC\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:16:35\', \'2024-11-28 03:16:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (:department:, :first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :school_id:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Auth.php(53): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-28 03:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:17:38 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) in C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php(1896): fsockopen('smtp.gmail.com', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(61): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#7 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-11-28 03:17:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-28 03:17:38 --> 
+INFO - 2024-11-28 03:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:20:27 --> mysqli_sql_exception: Duplicate entry 'jajilos544@kindomd.com' for key 'email' in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(53): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-11-28 03:20:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'jajilos544@kindomd.com' for key 'email'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (:department:, :first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :school_id:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Auth.php(53): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-28 03:20:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'jajilos544@kindomd.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$zGIYYfREhQjeMej6rfckVeZblMfkJK5T5uNXfb1WI1II29dtH6c6y\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:20:27\', \'2024-11-28 03:20:27\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$zGIYYfREhQjeMej6rfckVeZblMfkJK5T5uNXfb1WI1II29dtH6c6y\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:20:27\', \'2024-11-28 03:20:27\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (:department:, :first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :school_id:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Auth.php(53): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-28 03:20:27 --> [Caused by] mysqli_sql_exception: Duplicate entry 'jajilos544@kindomd.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$zGIYYfREhQjeMej6rfckVeZblMfkJK5T5uNXfb1WI1II29dtH6c6y\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:20:27\', \'2024-11-28 03:20:27\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$zGIYYfREhQjeMej6rfckVeZblMfkJK5T5uNXfb1WI1II29dtH6c6y\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:20:27\', \'2024-11-28 03:20:27\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Computer Engineering\', \'F\', \'\', \'F\', \'jajilos544@kindomd.com\', \'$2y$10$zGIYYfREhQjeMej6rfckVeZblMfkJK5T5uNXfb1WI1II29dtH6c6y\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:20:27\', \'2024-11-28 03:20:27\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (:department:, :first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :school_id:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Auth.php(53): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-28 03:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:21:05 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-28 03:21:05 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-2ee0fb10032sm2600319a91.45 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2ee0fb10032sm2600319a91.45 - gsmtp
+
+INFO - 2024-11-28 03:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:24:31 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) in C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php(1896): fsockopen('smtp.gmail.com', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\equipment-management-itso\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(61): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#7 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-11-28 03:24:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-28 03:24:31 --> 
+INFO - 2024-11-28 03:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:26:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-28 03:26:36 --> 220 smtp.gmail.com ESMTP d9443c01a7336-215218f22c2sm3215775ad.26 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-215218f22c2sm3215775ad.26 - gsmtp
+
+INFO - 2024-11-28 03:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:27:36 --> mysqli_sql_exception: Duplicate entry 'jajilos544@kindomd.com' for key 'email' in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\equipment-management-itso\app\Controllers\Auth.php(53): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\Auth->register()
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-11-28 03:27:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'jajilos544@kindomd.com' for key 'email'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (:department:, :first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :school_id:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Auth.php(53): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-28 03:27:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'jajilos544@kindomd.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Humanities and Social Sciences\', \'f\', \'\', \'f\', \'jajilos544@kindomd.com\', \'$2y$10$qArx.bE3W565eKrRM00iouf90sK15P/BtoBUeayERddD9R10AxfKm\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:27:36\', \'2024-11-28 03:27:36\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Humanities and Social Sciences\', \'f\', \'\', \'f\', \'jajilos544@kindomd.com\', \'$2y$10$qArx.bE3W565eKrRM00iouf90sK15P/BtoBUeayERddD9R10AxfKm\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:27:36\', \'2024-11-28 03:27:36\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (:department:, :first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :school_id:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Auth.php(53): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-28 03:27:36 --> [Caused by] mysqli_sql_exception: Duplicate entry 'jajilos544@kindomd.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Humanities and Social Sciences\', \'f\', \'\', \'f\', \'jajilos544@kindomd.com\', \'$2y$10$qArx.bE3W565eKrRM00iouf90sK15P/BtoBUeayERddD9R10AxfKm\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:27:36\', \'2024-11-28 03:27:36\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Humanities and Social Sciences\', \'f\', \'\', \'f\', \'jajilos544@kindomd.com\', \'$2y$10$qArx.bE3W565eKrRM00iouf90sK15P/BtoBUeayERddD9R10AxfKm\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:27:36\', \'2024-11-28 03:27:36\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (\'Humanities and Social Sciences\', \'f\', \'\', \'f\', \'jajilos544@kindomd.com\', \'$2y$10$qArx.bE3W565eKrRM00iouf90sK15P/BtoBUeayERddD9R10AxfKm\', \'2024-11-01\', \'male\', \'2024110008\', \'2024-11-28 03:27:36\', \'2024-11-28 03:27:36\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`department`, `first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `school_id`, `created_at`, `updated_at`) VALUES (:department:, :first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :school_id:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Auth.php(53): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-28 03:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 03:28:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-28 03:28:10 --> 220 smtp.gmail.com ESMTP d9443c01a7336-215219ac0e2sm3125135ad.232 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.36.18.50]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-215219ac0e2sm3125135ad.232 - gsmtp
+
+INFO - 2024-11-28 03:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 03:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 03:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 03:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 03:57:28 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "jajilos544@kindomd.com"
+[Method: GET, Route: activate/jajilos544@kindomd.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('activate/jajilos544@kindomd.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('activate/jajilos544@kindomd.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -21,7 +21,19 @@ class Auth extends BaseController
             'email' => $this->request->getPost('email'),
             'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
             'birthdate' => $this->request->getPost('birthdate'),
-            'gender' => $this->request->getPost('gender')
+            'gender' => $this->request->getPost('gender'),
+            'status' => '0', // Set default status to '0' (inactive)
+            'role' => $this->request->getPost('role')
+        ];
+
+        $rules = [
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'password' => 'required|min_length[6]',
+            'email' => 'required|valid_email',
+            'department' => 'required',
+            'birthdate' => 'required',
+            'gender' => 'required'
         ];
 
         // Generate associate number
@@ -39,8 +51,21 @@ class Auth extends BaseController
 
         // Attempt to save data
         if ($users->save($data)) {
+            // Send activation email
+            $message = "Hello " . $data['first_name'] . ",<br><br>Thank you for registering. Please activate your account by clicking the link below:<br><br><a href='" . base_url('activate/' . $data['email']) . "'>Activate Account</a>";
+            $email = \Config\Services::email(); // Instantiate an email object
+            $email->setTo($data['email']);
+            $email->setSubject('Account Registration and Activation');
+            $email->setMessage($message);
+
+            if (!$email->send()) {
+                // Print email debugger information
+                echo $email->printDebugger(['headers']);
+                die();
+            }
+
             // Set success message in session
-            session()->setFlashdata('success', 'Registration successful! You can now log in.');
+            session()->setFlashdata('success', 'Registration successful! Please check your email to activate your account.');
         } else {
             // Set error message in session
             session()->setFlashdata('error', 'Registration failed! Please try again.');
