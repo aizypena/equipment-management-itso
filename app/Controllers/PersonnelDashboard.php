@@ -114,5 +114,48 @@ class PersonnelDashboard extends BaseController {
             . view('itso-personnel/users-view')
             . view('includes/associate-bottom');
     }
+
+
+    
+    // equipment crud
+    public function addEquipment() {
+        $data = [
+            'title' => 'ITSO Personnel - Add Equipment',
+        ];
+
+        return view('includes/tailwind-header', $data)
+            . view('itso-personnel/add-equipment')
+            . view('includes/associate-bottom');
+    }
+
+    public function viewEquipment($id) {
+        $equipmentModel = new EquipmentModel();
+        $equipment = $equipmentModel->find($id);
+
+        if (!$equipment) {
+            session()->setFlashdata('error', 'Equipment not found.');
+            return redirect()->to(base_url('itso-personnel/equipment'));
+        }
+
+        $data = [
+            'title' => 'Equipment Details',
+            'equipment' => $equipment
+        ];
+
+        return view('includes/tailwind-header', $data)
+            . view('itso-personnel/view-equipment')
+            . view('includes/associate-bottom');
+    }
+
+    public function editEquipment() {
+
+        $data = [
+            'title' => 'ITSO Personnel - Edit Equipment',
+        ];
+
+        return view('includes/tailwind-header', $data)
+            . view('itso-personnel/edit-equipment')
+            . view('includes/associate-bottom');
+    }
 }
 ?>

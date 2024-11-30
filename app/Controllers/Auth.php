@@ -66,7 +66,7 @@ class Auth extends BaseController
         }
     }
 
-    public function register(): string
+    public function register()
     {
         $users = new Users();
 
@@ -85,15 +85,63 @@ class Auth extends BaseController
             'activation_code' => uniqid() // Generate a unique activation code
         ];
 
+        // Custom validation rules with error messages
         $rules = [
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'password' => 'required|min_length[6]',
-            'email' => 'required|valid_email',
-            'department' => 'required',
-            'birthdate' => 'required',
-            'gender' => 'required'
+            'first_name' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'First name is required.',
+                ],
+            ],
+            'last_name' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Last name is required.',
+                ],
+            ],
+            'password' => [
+                'rules' => 'required|min_length[8]|regex_match[/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).+$/]',
+                'errors' => [
+                    'required' => 'Password is required.',
+                    'min_length' => 'Password must be at least 8 characters long.',
+                    'regex_match' => 'Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character.',
+                ],
+            ],
+            'email' => [
+                'rules' => 'required|valid_email',
+                'errors' => [
+                    'required' => 'Email is required.',
+                    'valid_email' => 'You must provide a valid email address.',
+                ],
+            ],
+            'department' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Department is required.',
+                ],
+            ],
+            'birthdate' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Birthdate is required.',
+                ],
+            ],
+            'gender' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Gender is required.',
+                ],
+            ],
         ];
+
+        // Validate form data
+        if (!$this->validate($rules)) {
+            // Capture validation errors and set as flashdata
+            session()->setFlashdata('errors', $this->validator->getErrors());
+
+            // Redirect back to the registration form
+            return redirect()->back()->withInput();
+        }
 
         // Generate associate number
         $currentYearMonth = date('Ym');
@@ -139,7 +187,6 @@ class Auth extends BaseController
             . view('register')
             . view('includes/bottom');
     }
-
 
     public function associateLogin()
     {

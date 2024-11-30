@@ -40,6 +40,12 @@ $routes->put('itso-personnel/equipment/update/(:num)', 'PersonnelController::upd
 $routes->delete('itso-personnel/equipment/delete/(:num)', 'PersonnelController::deleteEquipment/$1');
 $routes->get('itso-personnel/equipment/get/(:num)', 'PersonnelController::getEquipment/$1');
 
+// itso equipment crud
+$routes->get('itso-personnel/equipment/add', 'PersonnelDashboard::addEquipment');
+$routes->post('equipment/add', 'PersonnelController::addEquipment');
+$routes->get('itso-personnel/equipment/view/(:num)', 'PersonnelDashboard::viewEquipment/$1');
+$routes->get('itso-personnel/equipment/edit', 'PersonnelDashboard::editEquipment');
+
 // associates dashboard route
 $routes->get('associate-account', 'AssociateDashboard::profile');
 $routes->get('associate-account/equipment', 'AssociateDashboard::equipment');
@@ -55,3 +61,6 @@ $routes->get('viewUsers', 'PersonnelDashboard::usersView');
 
 //activate account
 $routes->get('activate/(:any)', 'Auth::activateAccount/$1');
+
+//add user
+$routes->post('equipment/add', 'EquipmentController::addEquipment');

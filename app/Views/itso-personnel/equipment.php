@@ -11,7 +11,8 @@
         </div>
 
         <div class="mb-4 flex justify-end">
-            <button class="bg-blue-700 text-white px-3 py-1 rounded" onclick="showForm('create')">Add Equipment</button>
+            <a href="<?= base_url('itso-personnel/equipment/add') ?>"
+                class="bg-blue-700 text-white px-3 py-1 rounded">Add Equipment</a>
         </div>
 
         <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
@@ -44,50 +45,43 @@
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap text-gray-800 dark:text-gray-100">
                         <?= ucfirst($item['status']) ?></td>
-                    <td class="px-6 py-4 whitespace-nowrap">
-                        <button class="bg-green-700 text-white px-3 py-1 rounded"
-                            onclick="showForm('update', <?= $item['equipment_id'] ?>)">Edit</button>
-                        <button class="bg-red-700 text-white px-3 py-1 rounded"
-                            onclick="deleteEquipment(<?= $item['equipment_id'] ?>)">Delete</button>
+                    <td class="px-6 py-4 whitespace-nowrap text-gray-800 dark:text-gray-100">
+                        <!-- Action Icons -->
+                        <div class="flex space-x-2">
+                            <a href="<?= base_url('itso-personnel/equipment/view/' . $item['equipment_id']) ?>">
+                                <svg class="hover:text-green-500 w-6 h-6 text-gray-800 dark:text-white"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-width="2"
+                                        d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z" />
+                                    <path stroke="currentColor" stroke-width="2"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="hover:text-blue-500 w-6 h-6 text-gray-800 dark:text-white"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M10.779 17.779 4.36 19.918 6.5 13.5m4.279 4.279 8.364-8.643a3.027 3.027 0 0 0-2.14-5.165 3.03 3.03 0 0 0-2.14.886L6.5 13.5m4.279 4.279L6.499 13.5m2.14 2.14 6.213-6.504M12.75 7.04 17 11.28" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="hover:text-red-500 w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z" />
+                                </svg>
+                            </a>
+                        </div>
                     </td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
-    </div>
-</div>
-
-<!-- MODAL FOR CRUD -->
-<div id="crud-modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
-    <div class="bg-white dark:bg-gray-800 rounded-lg p-8 w-1/3">
-        <h2 id="crud-title" class="text-xl font-bold mb-4">Add Equipment</h2>
-        <form id="crud-form">
-            <input type="hidden" id="crud-id" name="equipment_id">
-            <div class="mb-4">
-                <label for="crud-name" class="block text-gray-700 dark:text-gray-300">Name</label>
-                <input type="text" id="crud-name" name="name"
-                    class="w-full px-4 py-2 rounded bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 focus:outline-none">
-            </div>
-            <div class="mb-4">
-                <label for="crud-category" class="block text-gray-700 dark:text-gray-300">Category</label>
-                <input type="text" id="crud-category" name="category"
-                    class="w-full px-4 py-2 rounded bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 focus:outline-none">
-            </div>
-            <div class="mb-4">
-                <label for="crud-status" class="block text-gray-700 dark:text-gray-300">Status</label>
-                <select id="crud-status" name="status"
-                    class="w-full px-4 py-2 rounded bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 focus:outline-none">
-                    <option value="available">Available</option>
-                    <option value="borrowed">Borrowed</option>
-                </select>
-            </div>
-            <div class="flex justify-end">
-                <button type="button"
-                    class="mr-4 px-4 py-2 rounded bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-300"
-                    onclick="hideForm()">Cancel</button>
-                <button type="submit" class="px-4 py-2 rounded bg-blue-700 text-white">Save</button>
-            </div>
-        </form>
     </div>
 </div>
 
@@ -113,86 +107,5 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 // Listen for changes in the user's color scheme preference
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     document.body.classList.toggle('dark', event.matches);
-});
-
-// JavaScript functions to handle CRUD operations
-function showForm(action, id = null) {
-    const modal = document.getElementById('crud-modal');
-    const form = document.getElementById('crud-form');
-    const title = document.getElementById('crud-title');
-
-    if (action === 'create') {
-        form.reset();
-        title.textContent = 'Add Equipment';
-    } else if (action === 'update') {
-        // Fetch and populate the form with data for the given id
-        fetch(`<?= base_url('personnel/equipment/get') ?>/${id}`)
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('crud-id').value = data.equipment_id;
-                document.getElementById('crud-name').value = data.name;
-                document.getElementById('crud-category').value = data.category;
-                document.getElementById('crud-status').value = data.status;
-                title.textContent = 'Edit Equipment';
-            });
-    }
-
-    modal.classList.remove('hidden');
-}
-
-function hideForm() {
-    const modal = document.getElementById('crud-modal');
-    modal.classList.add('hidden');
-}
-
-function deleteEquipment(id) {
-    if (confirm('Are you sure you want to delete this equipment?')) {
-        fetch(`<?= base_url('personnel/equipment/delete') ?>/${id}`, {
-                method: 'DELETE'
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Equipment deleted successfully!');
-                    location.reload(); // Refresh the page to update the equipment list
-                } else {
-                    alert('Failed to delete equipment. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred. Please try again.');
-            });
-    }
-}
-
-// Handle form submission
-document.getElementById('crud-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const formData = new FormData(this);
-    const id = document.getElementById('crud-id').value;
-    const url = id ? `<?= base_url('personnel/equipment/update') ?>/${id}` :
-        '<?= base_url('personnel/equipment/add') ?>';
-    const method = id ? 'PUT' : 'POST';
-
-    fetch(url, {
-            method: method,
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                alert('Equipment saved successfully!');
-                hideForm();
-                location.reload(); // Refresh the page to update the equipment list
-            } else {
-                alert('Failed to save equipment. Please try again.');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('An error occurred. Please try again.');
-        });
 });
 </script>

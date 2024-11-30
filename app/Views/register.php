@@ -16,6 +16,7 @@
                         <!-- Flashdata Messages -->
                         <?php $success = session()->getFlashdata('success') ?>
                         <?php $error = session()->getFlashdata('error') ?>
+                        <?php $errors = session()->getFlashdata('errors') ?>
 
                         <?php if ($success): ?>
                         <div class="alert alert-success">
@@ -26,6 +27,14 @@
                         <?php if ($error): ?>
                         <div class="alert alert-danger">
                             <?= is_array($error) ? implode(', ', $error) : $error ?>
+                        </div>
+                        <?php endif; ?>
+
+                        <?php if ($errors): ?>
+                        <div class="alert alert-danger">
+                            <?php foreach ($errors as $error): ?>
+                            <p><?= $error ?></p>
+                            <?php endforeach; ?>
                         </div>
                         <?php endif; ?>
 
@@ -69,17 +78,18 @@
                                 <div class="col-md-4 mb-4">
                                     <label for="first_name" class="form-label">First name</label>
                                     <input type="text" id="first_name" name="first_name"
-                                        class="form-control border-color" required />
+                                        class="form-control border-color" value="<?= old('first_name') ?>" required />
                                 </div>
                                 <div class="col-md-4 mb-4">
                                     <label for="middle_name" class="form-label form-label-optional">Middle name</label>
                                     <input type="text" id="middle_name" name="middle_name"
-                                        class="form-control border-color" placeholder="(Optional)" />
+                                        class="form-control border-color" placeholder="(Optional)"
+                                        value="<?= old('middle_name') ?>" />
                                 </div>
                                 <div class="col-md-4 mb-4">
                                     <label for="last_name" class="form-label">Last name</label>
                                     <input type="text" id="last_name" name="last_name" class="form-control border-color"
-                                        required />
+                                        value="<?= old('last_name') ?>" required />
                                 </div>
                             </div>
 
@@ -87,7 +97,7 @@
                             <div class="mb-4">
                                 <label for="email" class="form-label">Email address</label>
                                 <input type="email" id="email" name="email" class="form-control border-color"
-                                    required />
+                                    value="<?= old('email') ?>" required />
                             </div>
 
                             <!-- Password input -->
@@ -117,14 +127,16 @@
                                 <div class="col-md-6 mb-4">
                                     <label for="birthdate" class="form-label">Birthdate</label>
                                     <input type="date" id="birthdate" name="birthdate" class="form-control border-color"
-                                        required />
+                                        value="<?= old('birthdate') ?>" required />
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="gender" class="form-label">Gender</label>
                                     <select id="gender" name="gender" class="form-select border-color" required>
                                         <option value="" disabled selected>Select gender</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
+                                        <option value="male" <?= old('gender') == 'male' ? 'selected' : '' ?>>Male
+                                        </option>
+                                        <option value="female" <?= old('gender') == 'female' ? 'selected' : '' ?>>Female
+                                        </option>
                                     </select>
                                 </div>
                             </div>

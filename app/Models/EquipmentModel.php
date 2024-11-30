@@ -7,11 +7,17 @@ use CodeIgniter\Model;
 class EquipmentModel extends Model 
 {
     protected $table = 'school_equipment';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'equipment_id'; // Ensure 'id' is included here
     protected $allowedFields = [
-        'id', // Ensure 'id' is included here
         'name',
         'category',
-        'status'
+        'status',
+        'assigned_to',
+        'assigned_date',
+        'returned_date',
+        'notes',
+        'created_at',
+        'updated_at',
+        'deleted_at'
     ];
 }

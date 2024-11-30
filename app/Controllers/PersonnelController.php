@@ -4,24 +4,6 @@ namespace App\Controllers;
 use App\Models\EquipmentModel;
 
 class PersonnelController extends BaseController {
-    public function addEquipment()
-    {
-        $equipmentModel = new EquipmentModel();
-
-        // Collect form data
-        $data = [
-            'name' => $this->request->getPost('name'),
-            'category' => $this->request->getPost('category'),
-            'status' => $this->request->getPost('status')
-        ];
-
-        // Attempt to save data
-        if ($equipmentModel->save($data)) {
-            return $this->response->setJSON(['success' => true]);
-        } else {
-            return $this->response->setJSON(['success' => false]);
-        }
-    }
 
     public function updateEquipment($id)
     {
@@ -55,11 +37,34 @@ class PersonnelController extends BaseController {
         }
     }
 
-    public function getEquipment($id)
+    public function addEquipment()
     {
         $equipmentModel = new EquipmentModel();
-        $equipment = $equipmentModel->find($id);
 
-        return $this->response->setJSON($equipment);
+        // Collect form data
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'category' => $this->request->getPost('category'),
+            'notes' => $this->request->getPost('notes'),
+            'status' => 'available', // Set default status to 'available'
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
+        ];
+
+        // Attempt to save data
+        if ($equipmentModel->insert($data)) {
+            // Set success message in session
+            session()->setFlashdata('success', 'Equipment added successfully.');
+        } else {
+            // Set error message in session
+            session()->setFlashdata('error', 'Failed to add equipment. Please try again.');
+        }
+
+        // Redirect back to the equipment page
+        return redirect()->to(base_url('itso-personnel/equipment'));
+    }
+
+    public function editEquipment() {
+        
     }
 }

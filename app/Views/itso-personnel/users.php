@@ -44,6 +44,12 @@ function getRoleDisplayName($role) {
 
         <!-- Users Table -->
         <div class="overflow-x-auto">
+
+            <div class="mb-4 flex justify-end">
+                <a href="<?= base_url('itso-personnel/equipment/add') ?>"
+                    class="bg-blue-700 text-white px-3 py-1 rounded">Add Users</a>
+            </div>
+
             <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
                 <thead class="bg-gray-50 dark:bg-gray-800">
                     <tr>
