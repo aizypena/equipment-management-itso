@@ -6,6 +6,8 @@ use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
 {
+    public $defaultTimezone = 'Asia/Manila';
+    
     /**
      * --------------------------------------------------------------------------
      * Base Site URL

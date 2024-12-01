@@ -46,7 +46,7 @@ function getRoleDisplayName($role) {
         <div class="overflow-x-auto">
 
             <div class="mb-4 flex justify-end">
-                <a href="<?= base_url('itso-personnel/equipment/add') ?>"
+                <a href="<?= base_url('itso-personnel/users/add') ?>"
                     class="bg-blue-700 text-white px-3 py-1 rounded">Add Users</a>
             </div>
 
@@ -105,7 +105,7 @@ function getRoleDisplayName($role) {
                         <td class="px-6 py-4 whitespace-nowrap text-gray-800 dark:text-gray-100">
                             <!-- Action Icons -->
                             <div class="flex space-x-2">
-                                <a href="#">
+                                <a href="<?= base_url('itso-personnel/users/view/' . $user['id']) ?>">
                                     <svg class="hover:text-green-500 w-6 h-6 text-gray-800 dark:text-white"
                                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         fill="none" viewBox="0 0 24 24">
@@ -115,7 +115,7 @@ function getRoleDisplayName($role) {
                                             d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                     </svg>
                                 </a>
-                                <a href="#">
+                                <a href="<?= base_url('itso-personnel/users/edit/' . $user['id']) ?>">
                                     <svg class="hover:text-blue-500 w-6 h-6 text-gray-800 dark:text-white"
                                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         fill="none" viewBox="0 0 24 24">

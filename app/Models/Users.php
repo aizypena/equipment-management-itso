@@ -6,10 +6,9 @@ use CodeIgniter\Model;
 
 class Users extends Model
 {
-    protected $table      = 'users'; // Name of your table
-    protected $primaryKey = 'id';    // Primary key
+    protected $table      = 'users';
+    protected $primaryKey = 'id';
 
-    // Allowed fields for insertion and updating
     protected $allowedFields = [
         'department',
         'first_name',
@@ -21,13 +20,11 @@ class Users extends Model
         'gender',
         'school_id',
         'status',
-        'activation_code'
+        'activation_code',
+        'role'
     ];
 
-    // Enable timestamps for created_at and updated_at
     protected $useTimestamps = true;
-
-    // Set the names of the created_at and updated_at fields
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
 }

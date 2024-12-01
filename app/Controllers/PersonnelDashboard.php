@@ -118,44 +118,72 @@ class PersonnelDashboard extends BaseController {
 
     
     // equipment crud
-    public function addEquipment() {
+    public function deleteEquipment()
+    {
         $data = [
-            'title' => 'ITSO Personnel - Add Equipment',
+            'title' => 'ITSO Personnel - Delete Equipment',
         ];
 
         return view('includes/tailwind-header', $data)
-            . view('itso-personnel/add-equipment')
+            . view('itso-personnel/delete-equipment')
             . view('includes/associate-bottom');
     }
 
-    public function viewEquipment($id) {
-        $equipmentModel = new EquipmentModel();
-        $equipment = $equipmentModel->find($id);
 
-        if (!$equipment) {
-            session()->setFlashdata('error', 'Equipment not found.');
-            return redirect()->to(base_url('itso-personnel/equipment'));
+    //USERS
+    public function addUser() {
+        $data['title'] = 'Associate - Add Users';
+
+        if(!session()->has('logged_in')){
+            return redirect()->to('login/itso-personnel-login');
+        }
+
+        return view('includes/tailwind-header', $data)
+            . view('itso-personnel/add-users')
+            . view('includes/associate-bottom');
+    }
+
+    public function viewUser($id)
+    {
+        $userModel = new Users();
+
+        // Fetch user data by ID
+        $user = $userModel->find($id);
+
+        // Check if user exists
+        if (!$user) {
+            session()->setFlashdata('error', 'User not found.');
+            return redirect()->to(base_url('itso-personnel/users'));
+        }
+
+        // Pass user data to the view
+        $data = [
+            'title' => 'View User',
+            'user' => $user
+        ];
+
+        return view('includes/tailwind-header', $data)
+            . view('itso-personnel/view-user', $data)
+            . view('includes/associate-bottom');
+    }
+
+    public function editUser() {
+        $userModel = new Users();
+
+        if (!user) {
+            session()->setFlashdata('error', 'User not found.');
+            return redirect()->to(base_url('itso-personnel/users'));
         }
 
         $data = [
-            'title' => 'Equipment Details',
-            'equipment' => $equipment
+            'title' => 'Edit User',
+            'user' => $user
         ];
 
         return view('includes/tailwind-header', $data)
-            . view('itso-personnel/view-equipment')
+            . view('itso-personnel/edit-user', $data)
             . view('includes/associate-bottom');
     }
 
-    public function editEquipment() {
-
-        $data = [
-            'title' => 'ITSO Personnel - Edit Equipment',
-        ];
-
-        return view('includes/tailwind-header', $data)
-            . view('itso-personnel/edit-equipment')
-            . view('includes/associate-bottom');
-    }
 }
 ?>

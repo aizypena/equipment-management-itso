@@ -598,3 +598,1068 @@ INFO - 2024-11-30 02:23:44 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-11-30 02:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-30 02:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-30 02:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-30 03:10:29 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\view-equipment.php on line 31.
+ 1 APPPATH\Views\itso-personnel\view-equipment.php(31): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(146): view('itso-personnel/view-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-30 03:10:29 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\view-equipment.php on line 36.
+ 1 APPPATH\Views\itso-personnel\view-equipment.php(36): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(146): view('itso-personnel/view-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-30 03:10:29 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\view-equipment.php on line 46.
+ 1 APPPATH\Views\itso-personnel\view-equipment.php(46): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(146): view('itso-personnel/view-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 03:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-30 03:11:04 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\view-equipment.php on line 31.
+ 1 APPPATH\Views\itso-personnel\view-equipment.php(31): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(146): view('itso-personnel/view-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-30 03:11:04 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\view-equipment.php on line 36.
+ 1 APPPATH\Views\itso-personnel\view-equipment.php(36): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(146): view('itso-personnel/view-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-30 03:11:04 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\view-equipment.php on line 46.
+ 1 APPPATH\Views\itso-personnel\view-equipment.php(46): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(146): view('itso-personnel/view-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 03:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-30 03:21:47 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\view-equipment.php on line 31.
+ 1 APPPATH\Views\itso-personnel\view-equipment.php(31): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(146): view('itso-personnel/view-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-30 03:21:47 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\view-equipment.php on line 36.
+ 1 APPPATH\Views\itso-personnel\view-equipment.php(36): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(146): view('itso-personnel/view-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-30 03:21:47 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\view-equipment.php on line 46.
+ 1 APPPATH\Views\itso-personnel\view-equipment.php(46): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(146): view('itso-personnel/view-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 03:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 03:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 03:27:14 --> ErrorException: include_once(/c:/xampp/htdocs/equipment-management-itso/app/Database/connection.php): Failed to open stream: No such file or directory
+[Method: GET, Route: itso-personnel/equipment/edit]
+in APPPATH\Views\itso-personnel\edit-equipment.php on line 48.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(/c:/xampp/htdocs/equipment-management-itso/app/Database/connection.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php', 48)
+ 2 APPPATH\Views\itso-personnel\edit-equipment.php(48): include_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 6 APPPATH\Controllers\PersonnelDashboard.php(157): view('itso-personnel/edit-equipment')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->editEquipment()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 03:42:49 --> ErrorException: include_once(/c:/xampp/htdocs/equipment-management-itso/app/Database/connection.php): Failed to open stream: No such file or directory
+[Method: GET, Route: itso-personnel/equipment/edit]
+in APPPATH\Views\itso-personnel\edit-equipment.php on line 48.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(/c:/xampp/htdocs/equipment-management-itso/app/Database/connection.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php', 48)
+ 2 APPPATH\Views\itso-personnel\edit-equipment.php(48): include_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 6 APPPATH\Controllers\PersonnelDashboard.php(157): view('itso-personnel/edit-equipment')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->editEquipment()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 03:43:49 --> ErrorException: include_once(/c:/xampp/htdocs/equipment-management-itso/app/Database/connection.php): Failed to open stream: No such file or directory
+[Method: GET, Route: itso-personnel/equipment/edit]
+in APPPATH\Views\itso-personnel\edit-equipment.php on line 48.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(/c:/xampp/htdocs/equipment-management-itso/app/Database/connection.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php', 48)
+ 2 APPPATH\Views\itso-personnel\edit-equipment.php(48): include_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 6 APPPATH\Controllers\PersonnelDashboard.php(157): view('itso-personnel/edit-equipment')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->editEquipment()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 03:45:04 --> ErrorException: Undefined variable $equipment
+[Method: GET, Route: itso-personnel/equipment/edit]
+in APPPATH\Views\itso-personnel\edit-equipment.php on line 12.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $equipment', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(157): view('itso-personnel/edit-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->editEquipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 03:47:10 --> ErrorException: Undefined variable $equipment
+[Method: GET, Route: itso-personnel/equipment/edit]
+in APPPATH\Views\itso-personnel\edit-equipment.php on line 12.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $equipment', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(157): view('itso-personnel/edit-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->editEquipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 03:47:13 --> ErrorException: Undefined variable $equipment
+[Method: GET, Route: itso-personnel/equipment/edit]
+in APPPATH\Views\itso-personnel\edit-equipment.php on line 12.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $equipment', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(157): view('itso-personnel/edit-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->editEquipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 03:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 03:47:19 --> ErrorException: Undefined variable $equipment
+[Method: GET, Route: itso-personnel/equipment/edit]
+in APPPATH\Views\itso-personnel\edit-equipment.php on line 12.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $equipment', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(157): view('itso-personnel/edit-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->editEquipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 03:52:51 --> ErrorException: Undefined variable $equipment
+[Method: GET, Route: itso-personnel/equipment/edit]
+in APPPATH\Views\itso-personnel\edit-equipment.php on line 12.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $equipment', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(157): view('itso-personnel/edit-equipment')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->editEquipment()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 03:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 03:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-30 03:57:09 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\edit-equipment.php on line 43.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(43): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelController.php(64): view('itso-personnel/edit-equipment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->editEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 03:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-30 03:58:02 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\itso-personnel\edit-equipment.php on line 43.
+ 1 APPPATH\Views\itso-personnel\edit-equipment.php(43): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\edit-equipment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/edit-equipment', [], true)
+ 5 APPPATH\Controllers\PersonnelController.php(64): view('itso-personnel/edit-equipment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->editEquipment('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 03:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 03:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 03:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 03:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 03:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 03:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 04:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 12:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 04:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 12:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 04:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 05:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 06:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 06:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 06:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 06:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 06:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 06:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 06:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 06:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 06:53:22 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: itso-personnel/equipment/delete/4]
+in APPPATH\Controllers\PersonnelController.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment('4')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 06:53:49 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: itso-personnel/equipment/delete/5]
+in APPPATH\Controllers\PersonnelController.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment('5')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 06:54:01 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: itso-personnel/equipment/delete/4]
+in APPPATH\Controllers\PersonnelController.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment('4')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 06:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 06:56:25 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: itso-personnel/equipment/delete/4]
+in APPPATH\Controllers\PersonnelController.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment('4')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 06:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 06:59:10 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: itso-personnel/equipment/delete/4]
+in APPPATH\Controllers\PersonnelController.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment('4')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 07:08:51 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: itso-personnel/equipment/delete/4]
+in APPPATH\Controllers\PersonnelController.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment('4')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 07:16:05 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: itso-personnel/equipment/delete/6]
+in APPPATH\Controllers\PersonnelController.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment('6')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 07:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 07:25:26 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: itso-personnel/equipment/delete]
+in APPPATH\Controllers\PersonnelController.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 07:26:00 --> Error: Class "App\Controllers\Users" not found
+[Method: POST, Route: itso-personnel/equipment/delete]
+in APPPATH\Controllers\PersonnelController.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 07:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 07:26:32 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: itso-personnel/equipment/delete]
+in APPPATH\Controllers\PersonnelController.php on line 98.
+ 1 APPPATH\Controllers\PersonnelController.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Controllers\\PersonnelController.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 07:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 07:29:53 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: itso-personnel/equipment/delete]
+in APPPATH\Controllers\PersonnelController.php on line 98.
+ 1 APPPATH\Controllers\PersonnelController.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Controllers\\PersonnelController.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 07:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 07:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 07:30:05 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: itso-personnel/equipment/delete]
+in APPPATH\Controllers\PersonnelController.php on line 98.
+ 1 APPPATH\Controllers\PersonnelController.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Controllers\\PersonnelController.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 07:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 07:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 07:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 07:33:27 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: itso-personnel/equipment/delete]
+in APPPATH\Controllers\PersonnelController.php on line 98.
+ 1 APPPATH\Controllers\PersonnelController.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Controllers\\PersonnelController.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 07:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 07:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 07:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 07:54:09 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: itso-personnel/equipment/delete]
+in APPPATH\Controllers\PersonnelController.php on line 98.
+ 1 APPPATH\Controllers\PersonnelController.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Controllers\\PersonnelController.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 10:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 10:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 10:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 10:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 10:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 10:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 10:41:50 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: itso-personnel/equipment/delete]
+in APPPATH\Controllers\PersonnelController.php on line 98.
+ 1 APPPATH\Controllers\PersonnelController.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Controllers\\PersonnelController.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 10:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 10:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 10:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 10:49:07 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: itso-personnel/equipment/delete]
+in APPPATH\Controllers\PersonnelController.php on line 98.
+ 1 APPPATH\Controllers\PersonnelController.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Controllers\\PersonnelController.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->deleteEquipment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 10:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 10:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 11:16:15 --> User ID: 
+DEBUG - 2024-11-30 11:16:15 --> Password: 1
+DEBUG - 2024-11-30 11:16:15 --> Equipment ID: 2
+INFO - 2024-11-30 11:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 11:20:17 --> User ID: 
+DEBUG - 2024-11-30 11:20:17 --> Password: 1
+DEBUG - 2024-11-30 11:20:17 --> Equipment ID: 2
+INFO - 2024-11-30 11:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 11:27:19 --> User ID: 
+DEBUG - 2024-11-30 11:27:19 --> Password: 1
+DEBUG - 2024-11-30 11:27:19 --> Equipment ID: 2
+ERROR - 2024-11-30 11:27:19 --> Validation failed: All fields are required.
+INFO - 2024-11-30 11:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 11:36:05 --> User ID: 
+DEBUG - 2024-11-30 11:36:05 --> Password: 1
+DEBUG - 2024-11-30 11:36:05 --> Equipment ID: 2
+ERROR - 2024-11-30 11:36:05 --> Validation failed: User ID is empty.
+ERROR - 2024-11-30 11:36:05 --> Validation failed: All fields are required.
+INFO - 2024-11-30 11:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 11:43:40 --> User ID: 
+DEBUG - 2024-11-30 11:43:40 --> Password: 1
+DEBUG - 2024-11-30 11:43:40 --> Equipment ID: 2
+ERROR - 2024-11-30 11:43:40 --> Validation failed: User ID is empty.
+ERROR - 2024-11-30 11:43:40 --> Validation failed: All fields are required.
+INFO - 2024-11-30 11:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 11:43:56 --> User ID: 
+DEBUG - 2024-11-30 11:43:56 --> Password: 1
+DEBUG - 2024-11-30 11:43:56 --> Equipment ID: 2
+ERROR - 2024-11-30 11:43:56 --> Validation failed: User ID is empty.
+ERROR - 2024-11-30 11:43:56 --> Validation failed: All fields are required.
+INFO - 2024-11-30 11:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 11:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 13:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 13:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 13:53:20 --> User ID: 
+DEBUG - 2024-11-30 13:53:20 --> Password: 1
+DEBUG - 2024-11-30 13:53:20 --> Equipment ID: 2
+ERROR - 2024-11-30 13:53:20 --> Validation failed: User ID is empty.
+ERROR - 2024-11-30 13:53:20 --> Validation failed: All fields are required.
+INFO - 2024-11-30 13:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 14:55:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "associate/add-users.php"
+[Method: GET, Route: itso-personnel/equipment/add]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('associate/add-users.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('associate/add-users', [], true)
+ 3 APPPATH\Controllers\PersonnelDashboard.php(143): view('associate/add-users')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->addEquipment()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 14:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 14:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 14:59:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "associate/add-users.php"
+[Method: GET, Route: itso-personnel/equipment/add]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('associate/add-users.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('associate/add-users', [], true)
+ 3 APPPATH\Controllers\PersonnelDashboard.php(143): view('associate/add-users')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->addEquipment()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 15:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 15:36:18 --> Error: Class "App\Controllers\UserModel" not found
+[Method: GET, Route: itso-personnel/users/add]
+in APPPATH\Controllers\PersonnelDashboard.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->addUser()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-30 15:37:15 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\PersonnelDashboard.php on line 169.
+ 1 APPPATH\Controllers\PersonnelDashboard.php(169): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->addUser()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-30 15:37:16 --> mysqli_sql_exception: Column 'first_name' cannot be null in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\equipment-management-itso\app\Controllers\PersonnelDashboard.php(181): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->addUser()
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-11-30 15:37:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'first_name' cannot be null
+[Method: GET, Route: itso-personnel/users/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :school_id:, :activation_code:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(181): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->addUser()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 15:37:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'first_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (NULL, NULL, NULL, NULL, \'$2y$10$yW7fRdM5l8XjqLuH.UIpL.OuPJJc3DOb5nRiVWTDBEO8EEogYL0mC\', NULL, NULL, NULL, NULL, \'2c346b26172201e748bdaf5fb8a7b45c\', \'2024-11-30 15:37:16\', \'2024-11-30 15:37:16\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (NULL, NULL, NULL, NULL, \'$2y$10$yW7fRdM5l8XjqLuH.UIpL.OuPJJc3DOb5nRiVWTDBEO8EEogYL0mC\', NULL, NULL, NULL, NULL, \'2c346b26172201e748bdaf5fb8a7b45c\', \'2024-11-30 15:37:16\', \'2024-11-30 15:37:16\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :school_id:, :activation_code:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\PersonnelDashboard.php(181): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->addUser()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 15:37:16 --> [Caused by] mysqli_sql_exception: Column 'first_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (NULL, NULL, NULL, NULL, \'$2y$10$yW7fRdM5l8XjqLuH.UIpL.OuPJJc3DOb5nRiVWTDBEO8EEogYL0mC\', NULL, NULL, NULL, NULL, \'2c346b26172201e748bdaf5fb8a7b45c\', \'2024-11-30 15:37:16\', \'2024-11-30 15:37:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (NULL, NULL, NULL, NULL, \'$2y$10$yW7fRdM5l8XjqLuH.UIpL.OuPJJc3DOb5nRiVWTDBEO8EEogYL0mC\', NULL, NULL, NULL, NULL, \'2c346b26172201e748bdaf5fb8a7b45c\', \'2024-11-30 15:37:16\', \'2024-11-30 15:37:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (NULL, NULL, NULL, NULL, \'$2y$10$yW7fRdM5l8XjqLuH.UIpL.OuPJJc3DOb5nRiVWTDBEO8EEogYL0mC\', NULL, NULL, NULL, NULL, \'2c346b26172201e748bdaf5fb8a7b45c\', \'2024-11-30 15:37:16\', \'2024-11-30 15:37:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :school_id:, :activation_code:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\PersonnelDashboard.php(181): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->addUser()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 15:43:31 --> Error: Class "App\Controllers\UserModel" not found
+[Method: GET, Route: itso-personnel/users/add]
+in APPPATH\Controllers\PersonnelDashboard.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->addUser()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 15:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 15:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 15:57:48 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: itso-personnel/users/add]
+in APPPATH\Controllers\PersonnelController.php on line 146.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 15:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-30 15:58:07 --> mysqli_sql_exception: Column 'school_id' cannot be null in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\equipment-management-itso\app\Controllers\PersonnelController.php(197): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-11-30 15:58:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'school_id' cannot be null
+[Method: POST, Route: itso-personnel/users/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :school_id:, :activation_code:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\PersonnelController.php(197): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 15:58:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'school_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'Kurt\', \'\', \'Awat\', \'aizy@gmail.com\', \'$2y$10$Balnt3m.2.568AT9luUGROgGilammGxtCXrfFAPnc5REcAZHIQqEO\', \'2024-11-01\', \'female\', \'BSIT\', NULL, \'e14c91dc561c443e8e25b90f32f90c51\', \'2024-11-30 15:58:07\', \'2024-11-30 15:58:07\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'Kurt\', \'\', \'Awat\', \'aizy@gmail.com\', \'$2y$10$Balnt3m.2.568AT9luUGROgGilammGxtCXrfFAPnc5REcAZHIQqEO\', \'2024-11-01\', \'female\', \'BSIT\', NULL, \'e14c91dc561c443e8e25b90f32f90c51\', \'2024-11-30 15:58:07\', \'2024-11-30 15:58:07\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :school_id:, :activation_code:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\PersonnelController.php(197): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 15:58:07 --> [Caused by] mysqli_sql_exception: Column 'school_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'Kurt\', \'\', \'Awat\', \'aizy@gmail.com\', \'$2y$10$Balnt3m.2.568AT9luUGROgGilammGxtCXrfFAPnc5REcAZHIQqEO\', \'2024-11-01\', \'female\', \'BSIT\', NULL, \'e14c91dc561c443e8e25b90f32f90c51\', \'2024-11-30 15:58:07\', \'2024-11-30 15:58:07\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'Kurt\', \'\', \'Awat\', \'aizy@gmail.com\', \'$2y$10$Balnt3m.2.568AT9luUGROgGilammGxtCXrfFAPnc5REcAZHIQqEO\', \'2024-11-01\', \'female\', \'BSIT\', NULL, \'e14c91dc561c443e8e25b90f32f90c51\', \'2024-11-30 15:58:07\', \'2024-11-30 15:58:07\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'Kurt\', \'\', \'Awat\', \'aizy@gmail.com\', \'$2y$10$Balnt3m.2.568AT9luUGROgGilammGxtCXrfFAPnc5REcAZHIQqEO\', \'2024-11-01\', \'female\', \'BSIT\', NULL, \'e14c91dc561c443e8e25b90f32f90c51\', \'2024-11-30 15:58:07\', \'2024-11-30 15:58:07\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :school_id:, :activation_code:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\PersonnelController.php(197): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 16:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 16:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 17:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 17:10:16 --> First Name: Julyza
+DEBUG - 2024-11-30 17:10:16 --> Middle Name: 
+DEBUG - 2024-11-30 17:10:16 --> Last Name: Pena
+DEBUG - 2024-11-30 17:10:16 --> Email: aizpena11@gmail.com
+DEBUG - 2024-11-30 17:10:16 --> Birthdate: 2024-11-06
+DEBUG - 2024-11-30 17:10:16 --> Gender: female
+DEBUG - 2024-11-30 17:10:16 --> Department: BSIT
+DEBUG - 2024-11-30 17:10:16 --> Role: student
+INFO - 2024-11-30 17:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 17:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 17:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 17:17:25 --> First Name: lerick
+DEBUG - 2024-11-30 17:17:25 --> Middle Name: 
+DEBUG - 2024-11-30 17:17:25 --> Last Name: francisco
+DEBUG - 2024-11-30 17:17:25 --> Email: lerick@email.com
+DEBUG - 2024-11-30 17:17:25 --> Birthdate: 2024-11-01
+DEBUG - 2024-11-30 17:17:25 --> Gender: male
+DEBUG - 2024-11-30 17:17:25 --> Department: BSIT
+DEBUG - 2024-11-30 17:17:25 --> Role: student
+INFO - 2024-11-30 17:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 17:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 17:31:21 --> First Name: Julyza
+DEBUG - 2024-11-30 17:31:21 --> Middle Name: 
+DEBUG - 2024-11-30 17:31:21 --> Last Name: Pena
+DEBUG - 2024-11-30 17:31:21 --> Email: aizpena1@gmail.com
+DEBUG - 2024-11-30 17:31:21 --> Birthdate: 2024-09-04
+DEBUG - 2024-11-30 17:31:21 --> Gender: female
+DEBUG - 2024-11-30 17:31:21 --> Department: WMA
+DEBUG - 2024-11-30 17:31:21 --> Role: associate
+INFO - 2024-11-30 17:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 17:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:03:04 --> First Name: Julyza
+DEBUG - 2024-11-30 18:03:04 --> Middle Name: 
+DEBUG - 2024-11-30 18:03:04 --> Last Name: Pena
+DEBUG - 2024-11-30 18:03:04 --> Email: aizpena100@gmail.com
+DEBUG - 2024-11-30 18:03:04 --> Birthdate: 2024-09-04
+DEBUG - 2024-11-30 18:03:04 --> Gender: female
+DEBUG - 2024-11-30 18:03:04 --> Department: WMA
+DEBUG - 2024-11-30 18:03:04 --> Role: student
+INFO - 2024-11-30 18:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:14:49 --> Insert query: INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES ('fffffff', 'f', 'ffffffffffff', 'fffffffffff@email.com', '$2y$10$A1XrN6Xt3uwNqRIjXm5R0eSpxvPq.y2O1uQoHJn5nk9WfkF7wB9py', '1999-01-01', 'male', 'BSIT', '2024110002', '674b56195ed03', '2024-11-30 18:14:49', '2024-11-30 18:14:49')
+INFO - 2024-11-30 18:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:15:38 --> Insert query: INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES ('JLKL', '', 'JLK', 'jfd@email.com', '$2y$10$29XJkDNGCFkDi8kT/fr0O.WttbGfcimP9r32fIW29T1Hrl8m1oqFC', '1999-11-11', 'male', 'WMA', '202400001', '674b564a8c8a5', '2024-11-30 18:15:38', '2024-11-30 18:15:38')
+INFO - 2024-11-30 18:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 18:21:05 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: itso-personnel/users/add]
+in SYSTEMPATH\BaseModel.php on line 1011.
+ 1 SYSTEMPATH\BaseModel.php(1011): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\PersonnelController.php(209): CodeIgniter\Model->update(51, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-30 18:22:18 --> mysqli_sql_exception: Duplicate entry 'jv@email.com' for key 'email' in C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\equipment-management-itso\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\equipment-management-itso\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\equipment-management-itso\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\equipment-management-itso\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\equipment-management-itso\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\equipment-management-itso\app\Controllers\PersonnelController.php(204): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+#9 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+#10 C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\equipment-management-itso\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\equipment-management-itso\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-11-30 18:22:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'jv@email.com' for key 'email'
+[Method: POST, Route: itso-personnel/users/add]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :school_id:, :activation_code:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\PersonnelController.php(204): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 18:22:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'jv@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'jane\', \'\', \'virgin\', \'jv@email.com\', \'$2y$10$OACB56clK29zMX/P4OpwUOC7yx3.1glVYQx8Qu4q7/3gc.mL.eYKS\', \'1999-01-01\', \'male\', \'BSIT\', \'202400001\', \'674b57da96c3f\', \'2024-11-30 18:22:18\', \'2024-11-30 18:22:18\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'jane\', \'\', \'virgin\', \'jv@email.com\', \'$2y$10$OACB56clK29zMX/P4OpwUOC7yx3.1glVYQx8Qu4q7/3gc.mL.eYKS\', \'1999-01-01\', \'male\', \'BSIT\', \'202400001\', \'674b57da96c3f\', \'2024-11-30 18:22:18\', \'2024-11-30 18:22:18\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :school_id:, :activation_code:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\PersonnelController.php(204): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 18:22:18 --> [Caused by] mysqli_sql_exception: Duplicate entry 'jv@email.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'jane\', \'\', \'virgin\', \'jv@email.com\', \'$2y$10$OACB56clK29zMX/P4OpwUOC7yx3.1glVYQx8Qu4q7/3gc.mL.eYKS\', \'1999-01-01\', \'male\', \'BSIT\', \'202400001\', \'674b57da96c3f\', \'2024-11-30 18:22:18\', \'2024-11-30 18:22:18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'jane\', \'\', \'virgin\', \'jv@email.com\', \'$2y$10$OACB56clK29zMX/P4OpwUOC7yx3.1glVYQx8Qu4q7/3gc.mL.eYKS\', \'1999-01-01\', \'male\', \'BSIT\', \'202400001\', \'674b57da96c3f\', \'2024-11-30 18:22:18\', \'2024-11-30 18:22:18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (\'jane\', \'\', \'virgin\', \'jv@email.com\', \'$2y$10$OACB56clK29zMX/P4OpwUOC7yx3.1glVYQx8Qu4q7/3gc.mL.eYKS\', \'1999-01-01\', \'male\', \'BSIT\', \'202400001\', \'674b57da96c3f\', \'2024-11-30 18:22:18\', \'2024-11-30 18:22:18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `middle_name`, `last_name`, `email`, `password`, `birthdate`, `gender`, `department`, `school_id`, `activation_code`, `created_at`, `updated_at`) VALUES (:first_name:, :middle_name:, :last_name:, :email:, :password:, :birthdate:, :gender:, :department:, :school_id:, :activation_code:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\PersonnelController.php(204): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 18:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 18:22:51 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: itso-personnel/users/add]
+in SYSTEMPATH\BaseModel.php on line 1011.
+ 1 SYSTEMPATH\BaseModel.php(1011): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\PersonnelController.php(210): CodeIgniter\Model->update(53, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelController->addUser()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 18:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:25:28 --> First Name: tt
+DEBUG - 2024-11-30 18:25:28 --> Middle Name: 
+DEBUG - 2024-11-30 18:25:28 --> Last Name: t
+DEBUG - 2024-11-30 18:25:28 --> Email: test@email.com
+DEBUG - 2024-11-30 18:25:28 --> Birthdate: 1999-01-01
+DEBUG - 2024-11-30 18:25:28 --> Gender: female
+DEBUG - 2024-11-30 18:25:28 --> Department: WMA
+DEBUG - 2024-11-30 18:25:28 --> Role: student
+INFO - 2024-11-30 18:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:30:09 --> First Name: m
+DEBUG - 2024-11-30 18:30:09 --> Middle Name: 
+DEBUG - 2024-11-30 18:30:09 --> Last Name: m
+DEBUG - 2024-11-30 18:30:09 --> Email: mm@email.com
+DEBUG - 2024-11-30 18:30:09 --> Birthdate: 1999-01-01
+DEBUG - 2024-11-30 18:30:09 --> Gender: female
+DEBUG - 2024-11-30 18:30:09 --> Department: WMA
+DEBUG - 2024-11-30 18:30:09 --> Role: student
+INFO - 2024-11-30 18:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:32:42 --> First Name: lany
+DEBUG - 2024-11-30 18:32:42 --> Middle Name: 
+DEBUG - 2024-11-30 18:32:42 --> Last Name: lan
+DEBUG - 2024-11-30 18:32:42 --> Email: lany@email.com
+DEBUG - 2024-11-30 18:32:42 --> Birthdate: 1999-01-01
+DEBUG - 2024-11-30 18:32:42 --> Gender: male
+DEBUG - 2024-11-30 18:32:42 --> Department: bsit
+DEBUG - 2024-11-30 18:32:42 --> Role: student
+INFO - 2024-11-30 18:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:35:47 --> First Name: shane
+DEBUG - 2024-11-30 18:35:47 --> Middle Name: 
+DEBUG - 2024-11-30 18:35:47 --> Last Name: verde
+DEBUG - 2024-11-30 18:35:47 --> Email: shane@email.com
+DEBUG - 2024-11-30 18:35:47 --> Birthdate: 1999-01-01
+DEBUG - 2024-11-30 18:35:47 --> Gender: male
+DEBUG - 2024-11-30 18:35:47 --> Department: bsit
+DEBUG - 2024-11-30 18:35:47 --> Role: itso_personnel
+INFO - 2024-11-30 18:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:36:55 --> First Name: john
+DEBUG - 2024-11-30 18:36:55 --> Middle Name: 
+DEBUG - 2024-11-30 18:36:55 --> Last Name: francis
+DEBUG - 2024-11-30 18:36:55 --> Email: jfrancis@email.com
+DEBUG - 2024-11-30 18:36:55 --> Birthdate: 1999-01-01
+DEBUG - 2024-11-30 18:36:55 --> Gender: male
+DEBUG - 2024-11-30 18:36:55 --> Department: BSIT
+DEBUG - 2024-11-30 18:36:55 --> Role: student
+INFO - 2024-11-30 18:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:37:39 --> First Name: pope
+DEBUG - 2024-11-30 18:37:39 --> Middle Name: 
+DEBUG - 2024-11-30 18:37:39 --> Last Name: benedic
+DEBUG - 2024-11-30 18:37:39 --> Email: pdic@email.com
+DEBUG - 2024-11-30 18:37:39 --> Birthdate: 2000-01-01
+DEBUG - 2024-11-30 18:37:39 --> Gender: male
+DEBUG - 2024-11-30 18:37:39 --> Department: BSIT
+DEBUG - 2024-11-30 18:37:39 --> Role: student
+INFO - 2024-11-30 18:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:40:50 --> First Name: john
+DEBUG - 2024-11-30 18:40:50 --> Middle Name: daniel
+DEBUG - 2024-11-30 18:40:50 --> Last Name: fernandea
+DEBUG - 2024-11-30 18:40:50 --> Email: jfernandez@email.com
+DEBUG - 2024-11-30 18:40:50 --> Birthdate: 1999-01-01
+DEBUG - 2024-11-30 18:40:50 --> Gender: male
+DEBUG - 2024-11-30 18:40:50 --> Department: BSIT
+DEBUG - 2024-11-30 18:40:50 --> Role: student
+INFO - 2024-11-30 18:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:43:48 --> First Name: Hi
+DEBUG - 2024-11-30 18:43:48 --> Middle Name: 
+DEBUG - 2024-11-30 18:43:48 --> Last Name: Hello
+DEBUG - 2024-11-30 18:43:48 --> Email: hilo@email.com
+DEBUG - 2024-11-30 18:43:48 --> Birthdate: 2000-01-01
+DEBUG - 2024-11-30 18:43:48 --> Gender: male
+DEBUG - 2024-11-30 18:43:48 --> Department: BSIT
+DEBUG - 2024-11-30 18:43:48 --> Role: student
+INFO - 2024-11-30 18:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:45:22 --> User role updated successfully to: student
+INFO - 2024-11-30 18:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:48:51 --> User role updated successfully to: itso_personnel
+INFO - 2024-11-30 18:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 18:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 18:56:26 --> Decoded activation code: 674b5fc142f9c
+DEBUG - 2024-11-30 18:56:26 --> User found with activation code: 674b5fc142f9c
+DEBUG - 2024-11-30 19:11:29 --> Decoded activation code: 674b5fc142f9c
+DEBUG - 2024-11-30 19:11:29 --> User found with activation code: 674b5fc142f9c
+INFO - 2024-11-30 19:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 19:18:01 --> Decoded activation code: 674b64d79fec4
+DEBUG - 2024-11-30 19:18:01 --> User found with activation code: 674b64d79fec4
+INFO - 2024-11-30 19:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 19:24:04 --> Decoded activation code: 674b664226f6e
+DEBUG - 2024-11-30 19:24:04 --> User found with activation code: 674b664226f6e
+DEBUG - 2024-11-30 19:24:04 --> User status updated to active.
+INFO - 2024-11-30 19:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-30 19:26:47 --> Decoded activation code: 674b664226f6e
+DEBUG - 2024-11-30 19:26:47 --> No user found with activation code: 674b664226f6e
+INFO - 2024-11-30 19:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 19:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 20:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 20:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 20:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 20:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 20:33:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "itso-personnel/view-users.php"
+[Method: GET, Route: itso-personnel/users/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('itso-personnel/view-users.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-users', [], true)
+ 3 APPPATH\Controllers\PersonnelDashboard.php(154): view('itso-personnel/view-users')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewUser()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 20:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-30 20:34:27 --> ErrorException: Undefined variable $user
+[Method: GET, Route: itso-personnel/users/view]
+in APPPATH\Views\itso-personnel\view-user.php on line 10.
+ 1 APPPATH\Views\itso-personnel\view-user.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-user.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\equipment-management-itso\\app\\Views\\itso-personnel\\view-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('itso-personnel/view-user', [], true)
+ 5 APPPATH\Controllers\PersonnelDashboard.php(154): view('itso-personnel/view-user')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewUser()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-30 20:37:55 --> ArgumentCountError: Too few arguments to function App\Controllers\PersonnelDashboard::viewUser(), 0 passed in C:\xampp\htdocs\equipment-management-itso\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: itso-personnel/users/view]
+in APPPATH\Controllers\PersonnelDashboard.php on line 146.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PersonnelDashboard->viewUser()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PersonnelDashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-30 20:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 20:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 21:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 21:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-30 21:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
